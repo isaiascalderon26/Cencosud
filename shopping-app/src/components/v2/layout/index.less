@@ -1,0 +1,44 @@
+.home-layout {
+  min-height: 100vh;
+
+  .main-content {
+    overflow-y: auto;
+    height: calc(100vh - 160px);
+  }
+
+  .top-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 0 16px;
+
+    &--center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      height: 50px !important;
+
+      & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 130px;
+      }
+    }
+
+    &--right-options {
+      display: flex;
+      column-gap: 4px;
+    }
+  }
+
+  .navigation-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+}

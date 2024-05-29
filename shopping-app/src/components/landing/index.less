@@ -1,0 +1,100 @@
+@import "../../theme/ui-rules.less";
+
+.component-landing-image-title {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 169px;
+    background-size: cover !important;
+    background-position: center;
+}
+
+.component-landing-image-under {
+    padding: 41px 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .image-under {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        z-index: 1;
+        border-radius: 50%;
+        box-shadow: 0px 4px 48px rgb(0 0 0 / 16%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.component-landing {
+    padding: 16px 30px;
+    .title {
+        h1 {
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+    }
+    .text-body {
+        padding-top: @grid*4;
+        overflow-y: scroll;
+        height: 250px;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: -0.05em;
+        color: var(--ion-color-primary-shade);
+        text-align: left;
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0px;
+            background: transparent;
+        }
+        p {
+          line-height: 150%;
+        }
+    }
+    .onboarding {
+        padding-top: @grid*8;
+        .more-info-onboarding {
+            width: 100%;
+            border-radius: @grid*4;
+            margin-top: @grid*7;
+            background-color: var(--ion-button-primary-color);
+            box-shadow: 0 0 @grid*5 rgba(0,0,0,0.12);
+            display: flex;
+            padding: @grid*2;
+            align-items: center;
+            .logo-onboarding {
+                margin-left: @grid*2;
+                img {
+                  margin-top: 0 !important;
+                  width: @grid*11 !important;
+                }
+            }
+            .text-onboarding {
+                margin-left: @grid*4;
+                font-size: @grid*4;
+                font-weight: @bold;
+                letter-spacing: @tracking;
+                text-align: left;
+                color: var(--ion-text-color);
+              }
+              &.listing-onboarding {
+                margin-top: @grid;
+                margin-bottom: @grid*6;
+              }
+              @media @breakpoint-s {
+                .text-onboarding{
+                  margin-left: @grid*5;
+                  font-size: @grid*3.5;
+                }
+                &.listing-onboarding {
+                  margin-bottom: @grid*4;
+                }
+              }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+@import "../../theme/ui-rules.less";
+
+ion-modal.search-modal {
+  --height: 100%;
+  --width: 100%;
+  align-items: flex-end;
+  --background: var(--ion-color-primary);
+
+  div[role="dialog"] {
+    --background: var(--ion-color-primary-contrast);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 0;
+
+    div.ion-page {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      background-color: var(--ion-color-primary-contrast);
+      top: @grid*4;
+
+      > .search_body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0 24px 12px 24px;
+      }
+    }
+  }
+  ion-header {
+    > div {
+      padding: @grid*2 0;
+      ion-icon {
+        color: var(--ion-text-color);
+        font-size: @grid*7;
+        padding: @grid*.5;
+        display: block;
+      }
+      @media @breakpoint-s {
+        ion-icon {
+          font-size: @grid*6;
+        }
+      }
+    }
+  }
+
+  &.initial-state {
+    ion-content {
+      --background: var(--ion-color-primary-contrast);
+
+      > #searchbar-container {
+          text-align: left;
+          // padding: 0 12px;
+          background-color: transparent !important;
+          width: 100%;
+          display: flex;
+          ion-searchbar {
+            z-index: 30;
+            margin-top: 8px;
+            padding-left: 3px;
+            padding-right: 3px;
+            .searchbar-input-container {
+              --background: var(--ion-button-primary-color);
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+              height: 40px;
+              border-radius: 40px;
+              input {
+
+                font-size: 16px;
+                letter-spacing: -0.05em;
+                font-weight: 600;
+                padding-left: 40px;
+                border-radius: 40px;
+              }
+              ion-icon {
+                left: 12px;
+                color: var(--ion-text-color);
+              }
+              .searchbar-clear-button {
+                right: 8px;
+                width: 32px;
+              }
+            }
+          }
+          @media @breakpoint-s {
+            ion-searchbar {
+              margin-top: 4px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          margin-top: 150px;
+          width: 100%;
+          text-align: center;
+          img {
+            width: 60%;
+          }
+        }
+
+      .search-list {
+        animation-name: search-fade;
+        animation-duration: 600ms;
+        animation-iteration-count: 1;
+        background-color: var(--ion-background-color);
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+        z-index: 10;
+        overflow-y: scroll;
+        ion-item {
+          --border-color: #eee;
+          > div {
+            padding-right: 16px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            > div {
+              display: flex;
+              align-items: center;
+              &:nth-child(1) {
+                > div {
+                  &:nth-child(1) {
+                    .search-logo {
+                      width: 56px;
+                      height: 56px;
+                      border-radius: 50%;
+                      margin: 24px 8px 20px 0;
+                      background-size: cover;
+                      background-position: center;
+                      border: 1px solid #eee;
+                      overflow: hidden;
+                      position: relative;
+                      background-color: #fff;
+                      img {
+                        padding: 4px;
+                        border-radius: 8px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                      }
+                    }
+                  }
+                  &:nth-child(2) {
+                    h1 {
+                      font-weight: bold;
+                      font-size: 16px;
+                      line-height: 16px;
+                      margin: 0;
+                      max-width: 50vw;
+                    }
+                    p {
+                      font-weight: 300;
+                      font-size: 12px;
+                      line-height: 12px;
+                      margin: 3px 0 0 0;
+                      max-width: 50vw;
+                    }
+                    @media @breakpoint-s {
+                      h1,
+                      p {
+                        max-width: 43vw;
+                      }
+                    }
+                  }
+                  &:nth-child(3) {
+                    position: absolute;
+                    right: 54px;
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .no-stores-large {
+        //position: fixed;
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > img {
+          width: 96px;
+          height: 96px;
+        }
+        > ion-icon {
+          width: 96px;
+          height: 96px;
+        }
+        > h2 {
+          padding-top: 20px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: -0.05em;
+        }
+        > p {
+          padding: 20px 0;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: -0.05em;
+        }
+      }
+    }
+  }
+}
+
+/* IPHONE 6 AND ABOVE IN TERMS OF SIZE */
+@media (min-height: 46em) {
+  ion-modal.task-detail-modal {
+    --height: 100%;
+  }
+}
+
+@media @breakpoint-m {
+  .search-modal {
+    .ion-page {
+      top: @grid*10 !important;
+    }
+  }
+}
+
+.search-modal-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+}
+
+.search-modal-background img {
+  max-height: 100vh;
+}

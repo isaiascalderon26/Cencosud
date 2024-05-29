@@ -1,0 +1,8 @@
+{
+  "name": "Mi Mall",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "0dd26389"
+}

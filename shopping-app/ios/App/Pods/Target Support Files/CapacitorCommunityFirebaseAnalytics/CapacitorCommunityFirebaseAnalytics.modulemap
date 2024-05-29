@@ -1,0 +1,6 @@
+framework module CapacitorCommunityFirebaseAnalytics {
+  umbrella header "CapacitorCommunityFirebaseAnalytics-umbrella.h"
+
+  export *
+  module * { export * }
+}

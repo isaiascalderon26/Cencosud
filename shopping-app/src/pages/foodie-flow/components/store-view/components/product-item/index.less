@@ -1,0 +1,136 @@
+@import "../../../../../../theme/ui-rules.less";
+
+.product-item-xyz {
+  min-height: 167px;
+  padding: 24px;
+  display: flex;
+  background: var(--ion-background-color);
+  border-bottom: 1px solid #e1e1e1;
+
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .name {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.05em;
+      margin-bottom: 4px;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+
+    .description {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 8px;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    position: relative;
+
+    .badge {
+      position: absolute;
+      //top: 16px;
+      transform: translateY(-30px);
+      right: -4px;
+      background: #34c759;
+      border-radius: 500px;
+      min-width: 24px;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+
+      .value {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+        color: #ffffff;
+      }
+    }
+    .unavailable-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .unavailable-badge {
+        position: absolute;
+        width: 68px;
+        height: 28px;
+        background: #F35353;
+        border-radius: 8px;
+        width: 68px;
+        height: 28px;
+        z-index: 1;
+  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+  
+        .value {
+          width: 64px;
+          height: 20px;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 150%;
+          /* or 15px */
+  
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.05em;
+          color: #FFFFFF;
+        }
+      }
+
+      .opaque {
+        width: 100%;
+        height: max-content;
+        opacity: 0.2;
+      }
+    }
+
+
+    ion-img::part(image) {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+}

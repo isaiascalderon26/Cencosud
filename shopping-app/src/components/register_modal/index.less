@@ -1,0 +1,117 @@
+ion-modal.register-modal {
+  --height: 375px;
+  --width: 100%;
+  align-items: flex-end;
+  --background: var(--ion-color-primary);
+  div[role="dialog"] {
+    border-radius: 30px;
+    --background: var(--ion-background-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    div.ion-page {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      background-color: var(--ion-background-color);
+    }
+  }
+  ion-content {
+    letter-spacing: -0.05em;
+    --background: var(--ion-background-color);
+    
+    >div {
+      &:nth-child(1) {
+        padding: 22px 22px 35px;
+        ion-icon {
+          color: var(--ion-text-color);
+          font-size: 24px;
+          float:right;
+        }
+      }
+      // IMAGE
+      &:nth-child(2) {
+        padding: 0 32px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .star-icon {
+          display: flex;
+          background: white;
+          border-radius: 50%;
+          img {
+            width: 81px;
+          }
+        }
+        
+        // TITLES
+        >div{
+          display: inline-block;
+          vertical-align: top;
+          h1{
+            font-weight: bold;
+            font-size: 28px;
+            margin:28px 0 7px;
+          }
+          h3{
+            color:var(--ion-color-primary-shade);      
+          }
+        }
+      }
+      //description
+      &:nth-child(3) {
+        padding: 16px 32px;
+        margin-top: 30px;
+        p {
+          color:var(--ion-color-primary-shade);      
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+      // DETAILS
+      &:nth-child(4) {
+        padding: 0px 21px;
+        >div {
+          margin: 12px 0;
+          padding: 15px 23px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h1 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0;
+          }
+          p{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18px;
+            margin: 0;
+          }
+          >div {
+            &:nth-child(2) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          ion-icon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* IPHONE 6 AND ABOVE IN TERMS OF SIZE */
+@media (min-height: 46em) {
+  ion-modal.task-detail-modal {
+    --height: 82%;
+  }
+}

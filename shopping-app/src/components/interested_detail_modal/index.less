@@ -1,0 +1,85 @@
+@import "../../theme/ui-rules.less";
+
+.ion-page.interests-selection-page {
+  ion-content {
+    >div {
+      &:nth-child(1) {
+        padding: 16px 24px 8px;
+        text-align: left;
+        h2 {
+          padding: 8px 8px;
+        }
+        ion-searchbar {
+          padding: 0;
+          input {
+            border-radius: 32px;
+            padding: 24px 20px 24px 48px !important;
+            letter-spacing: @tracking !important;
+          }
+          ion-icon {
+            padding-left: 8px;
+            padding-top: 4px;
+            color: var(--ion-text-color);
+          }
+          button {
+            margin-right: 16px;
+            margin-top: 2px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        padding: 0 32px;
+        text-align: left;
+      }
+      &:nth-child(3) {
+        margin-bottom: 5.4vh;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        >div {
+          display: flex;
+          align-items: center;
+          padding-top: 32px;
+          padding-left: 24px;
+          flex-wrap: wrap;
+          width: 350%;
+          >div{
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            margin: 0px 8px 10px;
+            padding: 8px 16px;
+            border: 2.5px solid var(--ion-text-color);
+            box-sizing: border-box;
+            border-radius: 32px;
+            border-radius: 32px;
+            p {
+              font-weight: bold;
+              font-size: 16px;
+            }
+            ion-icon {
+              margin-left: 8px;
+              font-size: 18px;
+            }
+          }
+          .selected_interest {
+            background: linear-gradient(var(--ion-background-color),var(--ion-background-color)) padding-box, linear-gradient(to right top, #FF55AA, #B850C9, #6572D6, #4EAEB8) border-box;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+    .next-button {
+      width: 100%;
+      padding: 0 32px 32px;
+      text-align: right;
+    }
+  }
+  ion-footer {
+    >div {
+      text-align: right;
+      padding: 32px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../theme/ui-rules.less";
+
+.activities-flow {
+  top: @grid*4;
+
+  ion-header {
+    >div {
+      padding: @grid*2 @grid*6 0;
+
+      ion-icon {
+        color: var(--ion-text-color);
+        font-size: @grid*7;
+        padding: @grid*0.5
+      }
+
+      @media @breakpoint-s {
+        ion-icon {
+          font-size: @grid*6;
+        }
+      }
+    }
+  }
+
+  .activities-init {
+    width: 100%;
+
+    &::part(ion-grid)::first-letter {
+      padding: 0 !important;
+    }
+
+
+
+    >div {
+      &:nth-child(1) {
+        padding: 0 @grid*8 @grid*10;
+
+        h1 {
+          color: var(--ion-text-color);
+          font-weight: bold;
+          font-size: @grid*8;
+          line-height: 1;
+        }
+      }
+
+      &:nth-child(2) {
+        padding: 0 24px;
+        margin-bottom: @grid*20;
+
+        >div {
+          margin-bottom: @grid*4;
+
+          img {
+            display: block;
+            border-radius: @grid*4;
+          }
+        }
+      }
+
+      @media @breakpoint-s {
+        &:nth-child(1) {
+          padding-bottom: @grid*6;
+
+          h1 {
+            font-size: @grid*6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @breakpoint-m {
+  .activities-flow {
+    top: @grid*10 !important;
+  }
+}

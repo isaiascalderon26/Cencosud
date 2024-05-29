@@ -1,0 +1,107 @@
+@import "../../theme/ui-rules.less"; 
+
+.component-otp {
+    padding: @grid*4 @grid*4 @grid*4 @grid*6;
+    .content {
+        .title h1 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 28px;
+            letter-spacing: -0.05em;
+            color: #000000;
+        }
+        .subtitle h3 {
+            padding-top: @grid*4;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: -0.05em;
+            color: #909090;
+        }
+        .code-char {
+            padding-top: @grid*6;
+            display: grid;
+            gap: 8px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-column-gap: 8px;
+            grid-row-gap: 8px;
+            grid-auto-rows: minmax(64px, auto);
+            .error-message {
+                color: var(--ion-color-primary-shade);
+            }
+            input {
+                color: var(--ion-text-color);
+                background: var(--ion-color-input-background);
+                display: block;
+                padding: 2px;
+                border: none; 
+                border-radius: 10px;
+                width: 44px;
+                height: 56px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 28px;
+                text-align: center;
+            }
+            @media @breakpoint-s {
+                input {
+                    width: 40px;
+                }
+            }
+            @media @breakpoint-m {
+                input {
+                    width: 48px;
+                }
+            }
+        }
+        @media @breakpoint-m {
+            .code-char {
+                grid-column-gap: 8px;
+            }
+        }
+        .error-message p {
+            color: red;
+            font-size: 14px;
+        }
+    }
+}
+
+.component-otp-footer {
+    .resend {
+        text-align: center;
+        padding-bottom: @grid*10;
+        .resend-text {
+            font-style: normal;
+            line-height: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: -0.05em;
+            color: var(--ion-text-color);
+            text-align: center;
+            opacity: 0.5;
+            padding-bottom: @grid*1;
+        }
+        .resend-action-text a {
+            padding-bottom: @grid*4;
+            color: var(--ion-text-color);
+            font-weight: 700;
+        }
+        .resend-action-text-disabled a {
+            padding-bottom: @grid*4;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: default;
+            pointer-events: none;
+            color: rgb(111, 111, 111) !important;
+
+        }
+        .countdown {
+            font-size: 12px; 
+          }
+    }
+    @media (min-height: 812px) {
+        .pad-buttons {
+            padding-bottom: @grid*10 !important;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../../../theme/ui-rules.less';
+
+.chip-wrapper-auljvossjr {
+  border-radius: @grid*2;
+  margin: 0;
+
+  .text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+  }
+
+  .success-color {
+    color: #2C682E;
+  }
+  .warning-color {
+    color: #7C5419;
+  }
+  .danger-color {
+    color: #CB2317;
+  }
+  .default-color {
+    color: #191919;
+  }
+  
+
+  &.success-bgcolor {
+    background: #EBFAF0;
+  }
+  &.warning-bgcolor {
+    background: #FFFFAE;
+  }
+  &.danger-bgcolor {
+    background: #FFEDED;
+  }
+  
+  ion-icon {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+
+  
+}
+@media (prefers-color-scheme: light) {
+  .chip-wrapper-auljvossjr {
+    &.default-bgcolor {
+      background: #F5F5F5 ;
+    }
+  }
+}

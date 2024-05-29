@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mi Mall</string>
+    <string name="title_activity_main">Mi Mall</string>
+    <string name="package_name">cencosudx.shopping.app</string>
+    <string name="custom_url_scheme">cencosudx.shopping.app</string>
+    <string name="universal_link_domain">shopping-app-d96b7.web.app</string>
+    <string name="server_client_id">803339148188-24ja1urghlj5vchuclg7rg8572ghp6h6.apps.googleusercontent.com</string>
+</resources>

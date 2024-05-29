@@ -1,0 +1,39 @@
+@import "../../theme/ui-rules.less";
+@import "./mode_vars.less";
+
+#paragraph-page{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: relative;
+  height: 100vh;
+
+  .title{
+    color: var(--ion-text-color);
+  }
+
+  ion-content{
+    .content{
+      padding: 0px 21px;
+
+      .font-zoom-0{
+        font-size: @grid*4;
+      }
+      .font-zoom-1{
+        font-size: @grid*4+2;
+      }
+      .font-zoom-2{
+        font-size: @grid*4+4;
+      }
+      .font-zoom-3{
+        font-size: @grid*4+6;
+      }
+    }
+  }
+  
+  .floating{
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+  }
+}

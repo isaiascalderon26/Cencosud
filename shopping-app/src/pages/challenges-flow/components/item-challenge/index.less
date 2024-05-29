@@ -1,0 +1,76 @@
+@import "../../../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.component-item-challenge {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  padding: 10px 24px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  align-items: center;
+  grid-template-columns: 20px 1fr 20px;
+  gap: 4px;
+  width: 100%;
+  display: flex;
+  .component-item-challenge-score-info {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    display: flex;
+    gap: @grid*1;
+    align-items: center;
+    letter-spacing: -0.05em;
+  }
+  .component-item-challenge-score {
+    width: 30%;
+    ion-icon{
+      font-size: 20px;
+    }
+  }
+  .component-item-challenge-text {
+    width: 80%;
+    .component-item-challenge-text-name {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+    }
+    .component-item-challenge-text-description {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+      line-height: 14px;
+    }
+  }
+  .component-item-challenge-pts {
+    text-align: left;
+    padding-left: 25px;
+  }
+  .chevron-icon {
+    font-size: @grid*4;
+    margin-right: @grid*4;
+  }
+  .icon-flash {
+    font-size: @grid*8; 
+  }
+  &.component-item-challenge-record {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

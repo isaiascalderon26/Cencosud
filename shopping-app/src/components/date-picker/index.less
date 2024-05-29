@@ -1,0 +1,31 @@
+.csx-date-picker {
+  display: flex;
+  column-gap: 8px;
+
+  .ion-activatabl{
+    margin-top: 12px !important;
+    margin-left: 12px !important;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+  }
+
+  &-selector-input:is(.disabled){
+      pointer-events: none;
+      opacity: 0.4;
+  }
+
+  &-month-picker {
+    position: absolute;
+    z-index: 9;
+  }
+
+  &-selector-input {
+    flex: 1;
+    padding: 14px 20px;
+    &--year {
+      img {
+        margin-right: 4px !important;
+      }
+    }
+  }
+}

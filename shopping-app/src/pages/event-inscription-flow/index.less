@@ -1,0 +1,163 @@
+@import "../../theme/ui-rules.less";
+
+.event-inscription-flow {
+  .component-landing {
+    margin-top: 90px;
+    height: calc(100vh - 238px);
+    display: flex;
+    flex-direction: column;
+
+    .title h1 {
+      margin-bottom: 0;
+    }
+
+    .sub-title h4 {
+      margin-top: 8px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .text-body {
+      flex: 1;
+      color: #aaa;
+    }
+  }
+
+   .confirm-content {
+            padding-top: 40%;
+            margin: @grid*6 @grid*6 @grid*6 @grid*6;
+            .icon {
+                padding-bottom: @grid*4;
+            }
+            .title h1 {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                letter-spacing: -0.05em;
+                padding-bottom: @grid*4;
+            }
+            .subtitle span {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: -0.05em;
+                color: #909090;
+                text-align: justify;
+            }
+            .buttons {
+                padding-top: 20%;
+                .white {
+                    color: #000;
+                    --border-color: #d8d8d8;
+                    --border-width: 2px;
+                    --border-style: solid;
+                }
+            }
+        }
+        
+}
+
+.form-inscription {
+  ion-icon {
+    color: white !important;
+  }
+
+  .select-input {
+
+    &.disabled{
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    
+    position: relative;
+    ::before {
+      content: "";
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01LjcyOTE3IDUuNjM2NDFMOS42NzkxNyAxLjY4NjQxQzkuNzc2OTYgMS41OTg1OCA5Ljg1NTgxIDEuNDkxNzQgOS45MTA5MiAxLjM3MjQxQzkuOTY2MDIgMS4yNTMwOCA5Ljk5NjIyIDEuMTIzNzYgOS45OTk2NyAwLjk5MjM3MkMxMC4wMDMxIDAuODYwOTc4IDkuOTc5NzQgMC43MzAyNjEgOS45MzA5NyAwLjYwODIwNUM5Ljg4MjIgMC40ODYxNDkgOS44MDkwNiAwLjM3NTMxNiA5LjcxNjAyIDAuMjgyNDc3QzkuNjIyOTggMC4xODk2MzggOS41MTE5OCAwLjExNjc0MyA5LjM4OTgyIDAuMDY4MjQyQzkuMjY3NjYgMC4wMTk3NDE0IDkuMTM2ODkgLTAuMDAzMzQ2MjUgOS4wMDU1MSAwLjAwMDM5MDk4QzguODc0MTIgMC4wMDQxMjgyIDguNzQ0ODcgMC4wMzQ2MTE4IDguNjI1NjcgMC4wODk5NzgyQzguNTA2NDYgMC4xNDUzNDUgOC4zOTk3OSAwLjIyNDQzMiA4LjMxMjE3IDAuMzIyNDFDNS45NjIxNyAyLjY0OTQxIDUuMDU5MTcgMy41NjE0MSA1LjA0NTE3IDMuNTc2NDFDNS4wMzExNyAzLjU5MTQxIDQuMDI1MTcgMi42MTg0MSAxLjczMDE3IDAuMzIyNDFDMS41NDgyNyAwLjE0MzU0MyAxLjMwMzA1IDAuMDQzODA3MSAxLjA0Nzk0IDAuMDQ0OTI4NUMwLjc5MjgyNSAwLjA0NjA0OTkgMC41NDg0OTIgMC4xNDc5MzggMC4zNjgxNjUgMC4zMjgzOTdDMC4xODc4MzggMC41MDg4NTYgMC4wODYxMjc1IDAuNzUzMjYzIDAuMDg1MTkyNyAxLjAwODM4QzAuMDg0MjU3OCAxLjI2MzQ5IDAuMTg0MTc0IDEuNTA4NjMgMC4zNjMxNzMgMS42OTA0MUw0LjMxMzE3IDUuNjQwNDFDNC40MDI3OCA1LjczMDUgNC41MDkzOCA1LjgwMTkxIDQuNjI2OCA1Ljg1MDQ5QzQuNzQ0MjEgNS44OTkwNyA0Ljg3MDExIDUuOTIzODUgNC45OTcxNyA1LjkyMzQxQzUuMDA1MTYgNS45MjQwNSA1LjAxMzE5IDUuOTI0MDUgNS4wMjExNyA1LjkyMzQxQzUuMDI5MTYgNS45MjM5OCA1LjAzNzE4IDUuOTIzOTggNS4wNDUxNyA1LjkyMzQxQzUuMTcyNDUgNS45MjI4OSA1LjI5ODM4IDUuODk3MjcgNS40MTU3NSA1Ljg0ODAzQzUuNTMzMTIgNS43OTg3OCA1LjYzOTYzIDUuNzI2ODcgNS43MjkxNyA1LjYzNjQxVjUuNjM2NDFaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K");
+      width: 14px;
+      height: 10px;
+      position: absolute;
+      right: 16px;
+      top: 20px;
+    }
+  }
+
+  .input-mall.mb-2 {
+    margin-bottom: 16px;
+  }
+
+  .component-input-text {
+    margin-bottom: 16px;
+  }
+
+  .form-section-header {
+    padding: 16px 0;
+    font-weight: 600;
+  }
+  .scheduling-image-title {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 169px;
+    background-size: cover !important;
+  }
+  .content-scheduling {
+    padding: 120px 30px;
+    .title {
+      h1 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: -0.05em;
+        color: #000000;
+      }
+    }
+    .subtitle {
+      padding-top: @grid*2;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.6);
+      text-transform: capitalize;
+    }
+    .input-star {
+      padding-top: @grid*8;
+      padding-bottom: @grid*8;
+    }
+    .text-body {
+      padding-top: @grid*4;
+      .config-scheduling {
+        .space {
+          padding-top: @grid*6;
+        }
+        .schedules-form-error {
+          color: red;
+          padding-left: @grid*4;
+          font-size: 15px;
+        }
+      }
+
+      .birthdate-edit {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+ion-modal.event-exist-plkght {
+  .buttons-footer {
+    padding-top: 70px;
+    
+}
+}
+

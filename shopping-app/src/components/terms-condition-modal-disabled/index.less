@@ -1,0 +1,226 @@
+@import "./mode_vars.less";
+@import "../../theme/ui-rules.less";
+
+
+
+ion-modal.terms-modal {
+  --height: 96%;
+  --width: 100%;
+  align-items: flex-end;
+  --background: var(--ion-back);
+
+  div[role="dialog"] {
+    --background: var(--ion-color-primary-contrast);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 30px 30px 0 0;
+
+    div.ion-page {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      background-color: var(--ion-color-primary-contrast);
+    }
+  }
+
+
+  &.initial-state{
+    ion-content{
+      background: var(--ion-background-color);
+      >div {
+        width: 100%;
+        padding: 24px 24px;
+        img {
+          width: @grid*16;
+          height: @grid*16;
+        }
+        h1{
+          font-weight: bold;
+          font-size: @grid*7;
+          padding: @grid*4 @grid*2 @grid*6;
+        }
+        @media @breakpoint-m {
+          img {
+            width: @grid*20;
+            height: @grid*20;
+          }         
+        }
+        @media @breakpoint-s {
+          img {
+            width: @grid*14;
+            height: @grid*14;
+          }
+          h1 {
+            font-size: @grid*5;
+            padding: @grid*2 @grid*2 @grid*4;
+          }
+        }
+        >div {
+          &.close-icon {
+            position: absolute;
+            right: 24px;
+            font-size: 26px;
+          }
+          &.container-terms-description{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            
+            .floating{
+              position: absolute;
+              z-index: 1;
+              bottom: 40px;
+            }
+
+            .terms-description {
+              padding: 0px 16px;
+              //margin-bottom: 20px;
+              overflow-x: scroll;
+              height: 260px;
+              border-radius: 8px;
+              //border: 1px solid var(--color-box-shadow);
+              p {
+                font-weight: 600;
+                color: var(--ion-text-color)
+              }
+            }
+
+            @media @breakpoint-m {
+              .terms-description {
+                height: 310px;
+                //margin-bottom: 50px;
+              }
+
+              .floating{
+                position: absolute;
+                z-index: 1;
+                bottom: 70px;
+              }
+            }
+            @media @breakpoint-l {
+              .terms-description {
+                height: 340px;
+                //margin-bottom: 50px;
+              }
+
+              .floating{
+                position: absolute;
+                z-index: 1;
+                bottom: 70px;
+              }
+            }
+            @media @breakpoint-xl {
+              .terms-description {
+                height: 400px;
+                //margin-bottom: 70px;
+              }
+
+              .floating{
+                position: absolute;
+                z-index: 1;
+                bottom: 90px;
+              }
+            }
+            @media @breakpoint-s {
+              .terms-description {
+                height: 220px;
+                padding: 0 @grid*2;
+                //margin-bottom: @grid*4;
+                p {
+                  font-size: @grid*3.5;
+                }
+              }
+
+              .floating{
+                position: absolute;
+                z-index: 1;
+                bottom: 36px;
+              }
+            }
+
+            .font-zoom-0{
+              p{
+                font-size: @grid*4;
+              }
+            }
+
+            .font-zoom-1{
+              p{
+                font-size: @grid*4+2;
+              }
+            }
+
+            .font-zoom-2{
+              p{
+                font-size: @grid*4+4;
+              }
+            }
+
+            .font-zoom-3{
+              p{
+                font-size: @grid*4+6;
+              }
+            }
+
+          }
+          &.checkbox {
+            padding: 0px 8px;
+            margin-bottom: @grid*7;
+            >div {
+              display: flex;
+              align-items: center;
+              padding: 12px 16px;
+              border: 2px solid var(--ion-text-color);
+              box-sizing: border-box;
+              border-radius: 8px;
+              p{
+                font-weight: 600;
+                font-size: 14px;
+                margin-left: 16px;
+              }
+              ion-checkbox {
+                --background-checked: var(--ion-text-color);
+                --border-color-checked: var(--ion-text-color);
+              }
+            }
+          }
+          @media @breakpoint-m {
+            &.checkbox {
+              margin-bottom: @grid*8;
+            }
+          }
+          @media @breakpoint-l {
+            &.checkbox {
+              margin-bottom: @grid*8;
+            }
+          }
+          @media @breakpoint-xl {
+            &.checkbox {
+              margin-bottom: @grid*8;
+            }
+          }
+          @media @breakpoint-s {
+            &.checkbox {
+              padding: 0;
+              margin-bottom: @grid*7;
+              p {
+                font-size: @grid*3.25 !important;
+              }
+            }
+          }
+        }
+      }
+      @media @breakpoint-s {
+        >div {
+          padding: @grid*6 @grid*5;
+        }
+        ion-button {
+          height: @grid*10;
+          margin: 0;
+          padding: 0 @grid;
+          font-size: @grid*3.5;
+        }
+      }
+    }
+  }
+}

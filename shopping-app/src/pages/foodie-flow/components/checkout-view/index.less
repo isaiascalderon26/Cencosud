@@ -1,0 +1,209 @@
+@import '../../../../theme/ui-rules.less';
+
+.checkout-sqzbanihdy {
+  @back-gradient: 
+    linear-gradient(var(--ion-button-primary-color),var(--ion-button-primary-color)) padding-box,
+    linear-gradient(to right top, #FF55AA, #B850C9, #6572D6, #4EAEB8) border-box;
+  
+  .view-title {
+    width: 100%;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 24px;
+    position: relative;
+
+    .title {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: -0.05em;
+    }
+  
+    .message {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 16px;
+    }
+  }
+
+  .view-content {
+    padding: 0 0px 24px 0px;
+    
+    .padded {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .coupon-label {
+      margin-top: 24px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.05em;
+    }
+
+    .delivery-types-label {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.05em;
+      
+    }
+  
+    .delivery-types {
+      display: flex;
+      margin-top: 16px;
+      height: 48px;
+  
+      .vertival-space {
+        width: 8px;
+      }
+    }
+    
+    .withdraw-types {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      //height: 48px;
+      .horizontal-space {
+        height: 8px;
+      }
+    }
+  
+    .error-message {
+      display: flex;
+      margin-top: 8px;
+  
+      .img {
+        width: 16px;
+        height: 16px;
+      }
+  
+      .text {
+        margin-left: 4px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.05em;
+        color: #FF3B30;
+      }
+    }
+  
+    .payment-methods-label {
+      margin: 16px 0;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.05em;
+    }
+  
+    .add-payment-method {
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      min-height: 52px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 58px;
+  
+      .icon {
+        width: 23px;
+      }
+  
+      .text {
+        margin-left: 10px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+      }
+    }
+  
+    .payment-method {
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      min-height: 52px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 58px;
+
+      &.coupon {
+        margin: 20px 0;
+      }
+  
+      .icon {
+        width: 23px;
+      }
+  
+      .text {
+        margin-left: 12px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+      }
+  
+      .space {
+        flex: 1
+      }
+  
+      .cards-icon {
+        width: 32px;
+      }
+
+      ion-icon {
+        border-radius: 50%;
+        background-color: #F5F5F5;
+        font-size: 24px;
+        background-color: #F5F5F5;
+        color: black;
+        border-radius: 50%;
+        --ionicon-stroke-width: 40px;
+    
+      }
+    }
+
+    .bottom-card-text {
+      padding: 8px 16px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .separator {
+      border-width: 0px;
+      border-top: 1px solid #E1E1E1;
+      height: 8px;
+      background-color: #F5F5F5;
+      position: relative;
+      width: 100%;
+
+    }
+  }
+
+}

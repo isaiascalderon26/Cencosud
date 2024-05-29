@@ -1,0 +1,53 @@
+@import "../../theme/ui-rules.less";
+
+.component-button-discount-item {
+    height: 58px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    grid-template-columns: 20px 1fr  20px;
+    gap: 4px;
+    width: 100%;
+    ion-icon {
+        font-size: 28px;
+    }
+    .icon-discount {
+        ion-icon {
+            padding-right: @grid*3;
+        }
+    }
+    &.component-button-discount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #F5F5F5;
+        border-radius: 58px;
+        border: 2px solid transparent;
+        .icon-discount {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            width: 190px;
+            .text-code h3 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: -0.05em;
+            }
+            img {
+                padding-right: @grid*3;
+            }
+        }
+    }
+  }
+
+  @media @breakpoint-m {
+    .component-button-discount-item  {
+        padding: @grid*4 @grid*6;
+    }
+  }

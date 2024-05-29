@@ -1,0 +1,60 @@
+@import "../../../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.component-credit-card-item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    border-radius: 58px;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    grid-template-columns: 20px 1fr  20px;
+    gap: 4px;
+    width: 100%;
+    ion-icon {
+        font-size: 28px;
+    }
+    .component-card-icon {
+        ion-icon {
+            padding-right: @grid*3;
+        }
+    }
+    &.component-credit-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--ion-card-background-color);
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+        border-radius: 58px;
+        border: 2px solid transparent;
+        .component-card-icon{
+            display: flex;
+            align-items: center;
+            height: 30px;
+            width: 190px;
+        img {
+            padding-right: 12px;
+        }
+      }
+      &.component-credit-card-selected {
+        border-color: var(--ion-text-color);
+      }
+    }
+    .component-icon-button-card {
+        padding-left: 0px;
+    }
+  }
+
+  @media @breakpoint-m {
+    .component-credit-card-item {
+        padding: 14px 24px;
+    }
+  }

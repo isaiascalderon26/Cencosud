@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "cencosudx.shopping.app",
+      "sha256_cert_fingerprints": [
+        "1A:C4:54:55:A8:D8:0E:6E:8E:38:2A:2A:98:6E:F0:63:94:77:CA:B5:9E:87:84:36:17:ED:6C:0B:C4:CB:56:F7"
+      ]
+    }
+  }
+]

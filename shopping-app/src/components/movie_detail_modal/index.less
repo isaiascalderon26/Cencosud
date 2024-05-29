@@ -1,0 +1,222 @@
+ion-modal.movie-detail-modal {
+  --height: 90%;
+  --width: 100%;
+  align-items: flex-end;
+  backdrop-filter: blur(4px);
+  ion-backdrop {
+    backdrop-filter: blur(3px);
+  }
+  div[role="dialog"] {
+    --background: linear-gradient(180deg, #ECE9F4 0%, #D0C7E2 100%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 30px 30px 0 0;
+
+    div.ion-page {
+      --background: linear-gradient(180deg, #ECE9F4 0%, #D0C7E2 100%);
+      border-radius: 30px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+  }
+
+  .background-modal {
+    width: 100vh;
+    top: -5%;
+    left: -65%;
+    position: absolute;
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+    height: 100%;
+    transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  .background-modal::after {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+  }
+
+  .cinema-title p.cine-subtitle {
+    color:#fff;
+  }
+  .cinema-schedule {
+    width: 200px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-left: 25px;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    .body-cinema-schedule {
+      display: flex;
+      .text-cinema{
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      ion-icon {
+        padding-top: 6px;
+        padding-left: 10px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &.initial-state {
+    ion-content {
+      --background: linear-gradient(180deg, #ECE9F4 0%, #D0C7E2 100%);
+      >div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+
+        ion-spinner {
+          height: 48px;
+          width: 48px;
+        }
+        div {
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+
+  &.page-loaded {
+    ion-content {
+      --background: var(--ion-button-primary-color);
+      iframe {
+        border:none;
+        margin-top: 60px;
+        border-radius: 8px;
+        width: 96%;
+        margin-left: 2%;
+      }
+      img{
+        object-fit: cover;
+        object-position: 0 15%;
+      }
+      >div {
+        &:nth-child(1) {
+          position: fixed;
+          font-size: 28px;
+          top: 16px;
+          right: 16px;
+
+          ion-icon{
+            background-color: #fff;
+            border-radius: 50%;
+            color: #000;
+          }
+        }
+
+        &:nth-child(3) {
+          padding: 22px 24px 0px;
+          h1{
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 6px;
+            color: #fff;
+            text-transform: capitalize;
+          }
+          p{
+            margin-top: 16px;
+            >span{
+              font-weight: 600;
+              font-size: 14px;
+              padding: 0 4px;
+              color: #fff;
+
+              &:nth-child(1){
+                font-size: 12px;
+                padding: 6px 8px;
+                background-color: white;
+                border-radius: 20px;
+                color: black;
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          margin: 16px 24px 0;
+          border-bottom: 2px solid #fff;
+          text-align: center;
+
+          span{
+            font-weight: bold;
+            font-size: 16px;
+            padding: 24px 0 12px;
+            color: #fff;
+            display: inline-block;
+            width: 50%;
+            opacity: .5;
+            transition: opacity 300ms;
+          }
+          span.active {
+            opacity: 1;
+            border-bottom: 3px solid #fff;
+          }
+        }
+        &:nth-child(5) {
+          margin-top: 35px;
+          padding: 0 26px;
+          letter-spacing: -0.05em;
+          color: #fff;
+          h1{
+            font-weight: bold;
+            font-size: 24px;
+            padding-bottom: 16px;
+            color: #fff;
+          }
+          ion-icon{
+            font-size: 24px;
+          }
+          .cinema-subtitle-body {
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+          }
+          .cinema-subtitle{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            padding-left: 5px;
+          }
+        }
+        /*&:nth-child(6) {
+          margin-top: 35px;
+          padding: 0 26px;
+          p{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+          }
+          margin-bottom: 144px;
+        }*/
+      }
+    }
+  }
+}
+
+
+
+/* IPHONE 6 AND ABOVE IN TERMS OF SIZE */
+@media (min-height: 46em) {
+  ion-modal.task-detail-modal {
+    --height: 82%;
+  }
+}

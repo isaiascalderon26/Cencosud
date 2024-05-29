@@ -1,0 +1,103 @@
+@import "../../../../theme/ui-rules.less";
+
+.exchanged-components {
+  display: flex;
+  //gap: @grid*8;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  background-color: var(--ion-button-primary-color);
+  box-shadow: 0 0 20px rgb(0 0 0 / 12%);
+  padding: 12px;
+  //align-items: center;
+  //height: 70px;
+
+  .image {
+    width: 80px;
+    height: 80px;
+    img{
+      min-width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+  }
+
+  .container-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+    padding-left: 12px;
+
+    .text{
+      display: flex;
+      flex-direction: column;
+      
+      .text-row{
+        display: flex;
+        justify-content: space-between;
+
+        .text-right {
+          font-family: Open Sans;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 16px;
+          letter-spacing: -0.05em;
+          text-align: left;
+        }
+
+        .text-left{
+          padding: 4px 8px;
+          gap: 4px;
+          background: #F4F4F4;
+          border-radius: 8px;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 120%;
+          letter-spacing: -0.05em;
+          color: #2C2C2C;
+          height: 24px;
+        }
+      }
+    
+      .text-subtitle {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        /* identical to box height, or 100% */
+    
+        letter-spacing: -0.05em;
+    
+        /* Global/Neutral/Medium */
+    
+        color: #909090;
+    
+        margin-top: 8px;
+    
+      }
+    }
+
+    .amount-point {
+      display: flex;
+      //styleName: Semibold/L10 - 16px;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: -0.05em;
+      text-align: left;
+
+      span{
+        margin-left: 5px;
+      }
+  
+    }
+  }
+}

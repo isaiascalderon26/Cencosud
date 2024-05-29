@@ -1,0 +1,153 @@
+
+    {
+      "date": "2021-10-04",
+      "movies": [
+        {
+          "id": "HO00000694",
+          "cast": {
+            "cast": [
+            ]
+          },
+          "director": "null ",
+          "formats": [
+            "2D",
+            "CONV"
+          ],
+          "gallery": {
+            "images": [
+            ]
+          },
+          "isComingSoon": false,
+          "OpeningDate": "2021-09-02T00:00:00-03:00",
+          "restricted": false,
+          "genre": "ROMANCE",
+          "isNewRelease": false,
+          "isPreSale": false,
+          "festival": "",
+          "languages": [
+            "SUB"
+          ],
+          "posterUrl": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000694?referenceScheme=HeadOffice&allowPlaceHolder=true",
+          "ratingDescription": "+14",
+          "runTime": 99,
+          "synopsis": "Los días pasan y las decisiones que Tessa ha tomado están cambiando por completo su vida. Las revelaciones sobre su familia y la de Hardin, pondrán en duda todo lo que sabían,  provocando un futuro cada día más incierto para su tórrida y apasionante relación. Tercera entrega de la exitosa saga escrita por Anna Todd y protagonizada por Josephine Langford y Hero Fiennes Tiffin.",
+          "thumbnailUrl": [
+            "http://vista.clcineplanet.com/WSVistaWebClientCDN/media/entity/get/FilmPosterGraphic/HO00000694?referenceScheme=HeadOffice&allowPlaceHolder=true&width=1",
+            "http://vista.clcineplanet.com/WSVistaWebClientCDN/media/entity/get/FilmPosterGraphic/HO00000694?referenceScheme=HeadOffice&allowPlaceHolder=true&width=379"
+          ],
+          "title": "AFTER: ALMAS PERDIDAS",
+          "trailer": "www.youtube.com/watch?v=_1w4tNIvqE8",
+          "cinemas": [
+            {
+              "cinemaId": "0000000004",
+              "dates": [
+                {
+                  "date": "2021-09-30T00:00:00",
+                  "sessions": [
+                    "0000000004-47012"
+                  ]
+                }
+              ]
+            }
+          ],
+          "movieDetailsUrl": "after-almas-perdidas"
+        },
+        {
+          "id": "HO00000692",
+          "cast": {
+            "cast": [
+            ]
+          },
+          "director": "null ",
+          "formats": [
+            "2D",
+            "CONV"
+          ],
+          "gallery": {
+            "images": [
+            ]
+          },
+          "isComingSoon": false,
+          "OpeningDate": "2021-09-16T00:00:00-03:00",
+          "restricted": false,
+          "genre": "ANIMACIÓN",
+          "isNewRelease": false,
+          "isPreSale": false,
+          "festival": "",
+          "languages": [
+            "DOB"
+          ],
+          "posterUrl": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000692?referenceScheme=HeadOffice&allowPlaceHolder=true",
+          "ratingDescription": "TE",
+          "runTime": 84,
+          "synopsis": "Ainbo es una joven nacida y criada en las profundidades de la selva amazónica que contará con la ayuda de sus divertidos amigos para salvar de una catástrofe ecológica su aldea. ¡Una aventura de proporciones amazónicas para toda la familia!",
+          "thumbnailUrl": [
+            "http://vista.clcineplanet.com/WSVistaWebClientCDN/media/entity/get/FilmPosterGraphic/HO00000692?referenceScheme=HeadOffice&allowPlaceHolder=true&width=1",
+            "http://vista.clcineplanet.com/WSVistaWebClientCDN/media/entity/get/FilmPosterGraphic/HO00000692?referenceScheme=HeadOffice&allowPlaceHolder=true&width=379"
+          ],
+          "title": "AINBO",
+          "trailer": "https://www.youtube.com/watch?v=IunwdHSBDZM&list=PLvJeTmFXYsRYyd24Lzm_GDHJt-vmG62gO",
+          "cinemas": [
+            {
+              "cinemaId": "0000000001",
+              "dates": [
+                {
+                  "date": "2021-09-30T00:00:00",
+                  "sessions": [
+                    "0000000001-25503"
+                  ]
+                }
+              ]
+            },
+            {
+              "cinemaId": "0000000012",
+              "dates": [
+                {
+                  "date": "2021-09-30T00:00:00",
+                  "sessions": [
+                    "0000000012-15407"
+                  ]
+                }
+              ]
+            },
+            {
+              "cinemaId": "0000000002",
+              "dates": [
+                {
+                  "date": "2021-09-30T00:00:00",
+                  "sessions": [
+                    "0000000002-25085"
+                  ]
+                }
+              ]
+            },
+            {
+              "cinemaId": "0000000004",
+              "dates": [
+                {
+                  "date": "2021-09-30T00:00:00",
+                  "sessions": [
+                    "0000000004-47009",
+                    "0000000004-46995"
+                  ]
+                }
+              ]
+            },
+            {
+              "cinemaId": "0000000007",
+              "dates": [
+                {
+                  "date": "2021-09-30T00:00:00",
+                  "sessions": [
+                    "0000000007-49840"
+                  ]
+                }
+              ]
+            }
+          ],
+          "movieDetailsUrl": "ainbo"
+        }
+      ]
+    }
+  
+    

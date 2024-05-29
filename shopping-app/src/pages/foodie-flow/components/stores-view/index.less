@@ -1,0 +1,62 @@
+@import "../../../../../src/theme/ui-rules.less";
+
+
+#default-header {
+  padding: max(var(--ion-safe-area-top),32px) 16px 8px;
+  .top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+
+    img {
+      height: 40px;
+    }
+
+    .icon-user-btn2 {
+      box-shadow: 0px 0px 9px 0px #00000026;
+      padding: 8px !important;
+      border-radius: 50%;
+    }
+
+    >div {
+      display: flex;
+      align-items: center;
+
+      // header icons
+      >ion-icon {
+
+        // notification icon
+        &:nth-child(1) {
+          padding: @grid;
+          font-size: @grid*6;
+          color: var(--ion-text-color);
+        }
+
+        // profile icon
+        &:nth-child(2) {
+          font-size: @grid*8;
+        }
+      }
+    }
+  }
+}
+
+.header-name {
+  margin: 8px auto 0px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+  ion-chip {
+    --background: #000000;
+    --color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    ion-icon {
+      color: #fff !important;
+    }
+  }
+}

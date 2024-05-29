@@ -1,0 +1,17 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appID": "J3DWKZTZCN.cencosudx.shopping.app",
+                "paths": [
+                    "*"
+                ]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "J3DWKZTZCN.cencosudx.shopping.app"
+        ]
+    }
+}

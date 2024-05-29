@@ -1,0 +1,101 @@
+@import "../../../../theme/ui-rules.less";
+
+.container-awards{
+  padding: 16px 0px;
+
+  ion-col{
+    .item-award{
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+
+      .container-item-award {
+        position:  absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 16px;
+        border-radius: @grid*6;
+        display: flex;
+        flex-direction: column;
+        h3{
+          size: 16px;
+          font-weight: 700;
+        }
+        p{
+          size: 12px;
+          height: 60px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space:nowrap
+        }
+        .description {
+          overflow-x: scroll;
+          &::-webkit-scrollbar {
+              display: none;
+              width: 0px;
+              background: transparent;
+          }
+          ul {
+            padding-left: 14px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 150%;
+            letter-spacing: -0.05em;
+          }
+        }
+      }
+      .actived {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background-color: var(--ion-button-primary-color);
+        p{
+          color: var(--ion-text-color-1);
+        }
+        ul {
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .inactived {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        h3{
+          color: #8e8d8d;
+        }
+        ul {
+          color: #8e8d8d;
+        }
+      }
+      .points{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        .label{
+          font-size: 13px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          box-shadow: none;
+          ion-icon{
+            margin-right: 6px;
+          }
+          span{
+            size: 12px;
+            margin-left: 5px;
+          }
+        }
+        .inactived {
+          color: #8e8d8d;
+        }
+      }
+    }
+  }
+  
+}
+
+

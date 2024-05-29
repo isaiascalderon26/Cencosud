@@ -1,0 +1,23 @@
+{
+  "name": "CapacitorCommunityBarcodeScanner",
+  "version": "2.1.1",
+  "summary": "A fast and efficient (QR) barcode scanner for Capacitor",
+  "license": "MIT",
+  "homepage": "git+https://github.com/capacitor-community/barcode-scanner.git",
+  "authors": "tafelnl",
+  "source": {
+    "git": "git+https://github.com/capacitor-community/barcode-scanner.git",
+    "tag": "2.1.1"
+  },
+  "source_files": "ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "dependencies": {
+    "Capacitor": [
+
+    ]
+  },
+  "swift_versions": "5.1",
+  "swift_version": "5.1"
+}

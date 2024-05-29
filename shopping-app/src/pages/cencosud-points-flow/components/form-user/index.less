@@ -1,0 +1,43 @@
+@import "../../../../theme/ui-rules.less"; 
+
+.component-form-user {
+    padding: @grid*6 @grid*6 @grid*6 @grid*6;
+    .form-user-title {
+        h1 {
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: -0.05em;
+            color: #000000;
+            margin-bottom: @grid*4;
+        }
+    }
+    .form-user-subtitle {
+        h3 {
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: -0.05em;
+            color: #909090
+        }
+    }
+    .form-user-content {
+        padding-top: @grid*6;
+        .input-field {
+            margin-bottom: @grid*4;
+        }
+        .calendar {
+            display: flex;
+            flex-direction: row;
+            gap: @grid*1;
+        }
+        .year-calendar {
+            width: 100%;
+        }
+    }
+}
+
+/* override color button picker*/
+.calendar-modal {
+    .picker-button{
+        color: #000000 !important;
+    }
+}

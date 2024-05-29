@@ -1,0 +1,102 @@
+@import "../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.autopass-notifications {
+    &.home{
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 65vh;
+          background: linear-gradient(315.51deg, #47BAD8 9.09%, #6A6CE9 35.73%, #9454E6 59.15%, #CE57D3 93.6%);
+        }
+        @media @breakpoint-m {
+          padding-top: @grid*10 !important;
+        }
+        @media @breakpoint-s {
+          &::before {
+            height: 100vh;
+          }
+        }
+        color: white;
+        background: white;
+        ion-header > div {
+          float: right;
+          padding: @grid*2 @grid*6 0;
+          > ion-icon {
+            color: white;
+            display: block;
+            padding: @grid*0.5;
+            font-size: @grid*7;
+          }
+          @media @breakpoint-s {
+            ion-icon {
+              font-size: @grid*6;
+            }
+          }
+        }
+        
+        .status-section {
+          background: white;
+          width: 100vw;
+          margin-top: 30px;
+          padding: 0px 40px 32px;
+          text-align: center;
+          &::before {
+            content: '';
+            position: relative;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            top: -24px;
+            background: white;
+            display: inline-block;
+          }
+          .status-big-icon {
+            font-size: 0px;
+            width: 80px;
+            margin: 0 auto 18px;
+            > img {
+              text-align: center;
+            }
+          }
+          @media @breakpoint-s {
+            .status-big-icon {
+              width: 56px;
+            }
+          }
+          @media @breakpoint-m {
+            .status-big-icon {
+              width: 88px;
+            }
+          }
+          h2 {
+            color: black;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 28px;
+            margin-bottom: 7px;
+          }
+          .process-status {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: -0.05em;
+            color: #000000;
+            padding-bottom: 20px;
+          }
+          .button-califications {
+            padding-top: @grid*4;
+          }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import "../../../../theme/ui-rules.less";
+
+#list-ranking-item {
+    padding: 0 8px;
+
+    ion-row {
+        padding: 20px 18px;
+        
+        &.player-logged{
+            background: #ECFAFF;
+            border-radius: 7px;
+            color: black;
+        }
+
+        &.player{
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        #ranking-item{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+
+            .user-information{
+                display: flex;
+                align-items: center;
+
+                .icon-ranking-first-positions{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url("../../../../assets/media/icon-ranking-first-positions.svg");
+                    background-repeat: no-repeat, repeat;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .position-number{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .icon-ranking-positions{
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .position-number{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: -0.05em;
+                    }
+                }
+
+                .player-name{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 15px;
+
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: -0.05em;
+                }
+            }
+
+            .user-points{
+                display: flex;
+                flex-direction: column;
+
+                .title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+
+                .points{
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 28px;
+
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

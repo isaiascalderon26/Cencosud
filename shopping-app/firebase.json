@@ -1,0 +1,96 @@
+{
+  "hosting": {
+    "public": "www",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "build/**/**.map"
+    ],
+    "appAssociation": "NONE",
+    "headers": [
+      {
+        "source": ".well-known/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      {
+        "source": "/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      {
+        "source": ".well-known/assetlinks.json",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      {
+        "source": "/assetlinks.json",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": ".well-known/apple-app-site-association",
+        "destination": "/apple-app-site-association"
+      },
+      {
+        "source": "apple-app-site-association",
+        "destination": "/apple-app-site-association"
+      },
+      {
+        "source": ".well-known/assetlinks.json",
+        "destination": "/assetlinks.json"
+      },
+      {
+        "source": "assetlinks.json",
+        "destination": "/assetlinks.json"
+      },
+      {
+        "source": "assetlinks",
+        "destination": "/assetlinks.json"
+      },
+      {
+        "source": "/deeplinks/sso_callback",
+        "destination": "/sso_callback.html"
+      },
+      {
+        "source": "/deeplinks/card_added_callback",
+        "destination": "/card_added_callback.html"
+      },
+      {
+        "source": "/deeplinks/autoscan",
+        "destination": "/autoscan_callback.html"
+      },
+      {
+        "source": "/deeplinks/**",
+        "destination": "/any_link.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "browser-deeplink.js",
+        "destination": "/browser-deeplink.js"
+      }
+    ]
+  }
+}

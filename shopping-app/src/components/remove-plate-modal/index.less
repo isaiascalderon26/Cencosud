@@ -1,0 +1,107 @@
+@import "../../theme/ui-rules.less";
+
+ion-modal.remove-card-modal {
+  --height: 380px;
+  --width: 100%;
+  --border-radius: 16px;
+  align-items: flex-end;
+
+  ion-backdrop {
+    backdrop-filter: blur(3px);
+  }
+
+  div[role="dialog"] {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    div.ion-page {
+      border-radius: 30px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      background: var(--ion-card-background-color);
+    }
+  }
+
+  &.initial-state {
+    ion-content {
+      > div {
+        div:nth-child(1) {
+          padding: 22px 22px 35px;
+          ion-icon {
+            color: var(--ion-text-color);
+            font-size: 24px;
+            float: right;
+          }
+        }
+
+        .delete-card-icon {
+          padding: 0 32px 5px;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: flex-start;
+          align-items: flex-start;
+          -webkit-flex-direction: column;
+          flex-direction: column;
+          ion-icon {
+            height: 80px;
+            width: 80px;
+          }
+          @media @breakpoint-s {
+            ion-icon {
+              height: 64px;
+              width: 64px;
+            }
+          }
+        }
+        h1 {
+          padding: @grid*4 @grid*8;
+          font-size: @grid*8;
+          font-weight: @bold;
+        }
+        p {
+          padding: 0 @grid*8 @grid*7;
+          color:var(--ion-color-primary-shade);      
+          font-weight: 600;
+          font-size: @grid*4;
+          line-height: @grid*5;
+        }
+        @media @breakpoint-s {
+          h1 {
+            font-size: @grid*7;
+          }
+        }
+        ion-button {
+          width: 85%;
+          margin: 0 auto;
+
+          ion-icon {
+            font-size: @grid*7;
+            color: var(--ion-color-text);
+            animation: spin-rotate infinite 1s linear;
+            margin-top: @grid*-0.5;
+          }
+        }
+      }
+    }
+  }
+
+  &.loading-state {
+    ion-content {
+      > div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media @breakpoint-s {
+  ion-modal.remove-card-modal {
+    --height: 360px;
+  }
+}

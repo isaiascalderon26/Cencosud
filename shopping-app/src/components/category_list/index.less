@@ -1,0 +1,117 @@
+@import "../../theme/ui-rules.less";
+
+ion-modal {
+  background-color: white;
+  &.category-list{
+   /*   */
+    
+    ion-header {
+      top: @grid*8;
+      // header top margin
+      padding: @grid*2 @grid*6 0;
+      // go back button
+      ion-icon {
+        display: block;
+        padding: @grid*0.5;
+        font-size: @grid*7;
+        color: var(--ion-text-color);
+      }
+      @media @breakpoint-s {
+        ion-icon {
+          font-size: @grid*6;
+        }
+      }
+    }
+    ion-list {
+      margin-top: @grid*4;
+      margin-bottom: @grid*40;
+    }
+    ion-item {
+      margin: @grid*4 0 @grid*4 @grid*6;
+      --padding-end: 0;
+      --padding-start: 0px;
+      --ion-safe-area-left: 0;
+      --inner-padding-end: 0;
+      --border-color: rgba(80,80,80,.2);
+      height: @grid*15;
+      item-inner{
+        padding-inline-start: 16px;
+      }
+      ion-label {
+        font-weight: @bold;
+        margin-bottom: 20px;
+        letter-spacing: @tracking;
+      }
+    }
+    @media @breakpoint-s {
+      ion-item {
+        height: @grid*14;
+
+        ion-label {
+          font-size: @grid*4 !important;
+        }
+      }
+      
+    }
+  
+    .item-native {
+      padding-left: 0;
+    }
+    ion-list-header {
+      padding-left: 0;
+      ion-label {
+        font-size: @grid*8;
+        margin: @grid*4 0 @grid*2;
+        font-weight: @bold;
+        line-height: 1;
+        letter-spacing: @tracking;
+
+        span.subcategory {
+          font-size: @grid*4;
+          color: lightgray;
+        }
+      }
+      @media @breakpoint-s {
+        ion-label {
+          font-size: @grid*7;
+        }
+      }
+    }
+    ion-icon.category-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-size: cover;
+      padding: 10px;
+      margin: 0px 16px 10px 0px;
+      position: relative;
+    }
+    ion-icon.category-icon::after {
+      content: '';
+      background: linear-gradient(45.8deg, #FF55AA 10.03%, #B850C9 25.23%, #6572D6 48.67%, #4EAEB8 72.74%);
+      opacity: 0.2;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 999px;
+    }
+    @media @breakpoint-s {
+      ion-icon.category-icon {
+        width: @grid*6;
+        height: @grid*6;
+      }
+    }
+    ion-icon.chevron-icon {
+      font-size: @grid*4;
+      margin-right: @grid*4;
+    }
+  }
+}
+
+@media @breakpoint-m {
+  .category-list {
+    /* top: @grid*10 !important; */
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.component-button-add {
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 58px;
+    height: 48px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border: 2px solid transparent;
+    background-color: var(--ion-card-background);
+    width: 100%;
+    .component-button-add-icon {
+        background-color: var(--ion-card-add-icons-color);
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 9px;
+        ion-icon {
+            font-size: 20px;
+            color: var(--ion-text-secundary-color);
+        }
+    }
+    .component-button-add-text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+        margin-left: 10px;
+        flex: 1;
+    }
+
+    ion-icon {
+        font-size: 28px;
+    }
+  }
+  @media @breakpoint-m {
+    .component-button-add {
+        height: 56px;
+    }
+  }

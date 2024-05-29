@@ -1,0 +1,527 @@
+@import "../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.challenges-flow {
+
+  /** 
+	* landing 
+	*/
+  .body-landing {
+  	width: 100%;
+    padding: 26px 30px;
+    .content-landing {
+      .image-landing {
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0px;
+      }
+      .title-landing {
+        h1 {
+          margin-top: 8px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 100%;
+          letter-spacing: -0.05em;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: -0.05em;
+				}
+        p {
+          padding-top: 20px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          letter-spacing: -0.05em;
+          color: rgba(0, 0, 0, 0.6);
+          margin-bottom: @grid*15;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+  /** 
+	* rut 
+	*/
+  .body-onboarding-rut {
+  	padding: 16px 30px;
+    .onboarding-rut-text {
+    	h1 {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--ion-color-primary-shade);
+      }
+    }
+    .onboarding-rut-input {
+      padding: 16px 0px;
+      input {
+        width: 100%;
+        height: 52px;
+        background-color: var(--ion-color-tertiary);
+        border-radius: 30px;
+        padding-left: 24px;
+        color: var(--ion-text-color);
+        font-size: 16px;
+        outline: none;
+        border: none;
+        letter-spacing: -0.05em;
+      }
+    }
+    .onboarding-rut-text-error {
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        color: #FF3B30;
+        letter-spacing: -5%;
+        text-align: left;
+        margin-left: 12px;
+      }
+    }
+  }
+  /**
+  * birthday
+  */
+  .body-onboarding-birthday {
+    .onboarding-birthday-text {
+      padding: 16px 30px;
+      h1 {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        color: rgb(102, 102, 102);
+      }
+    }
+    .onboarding-birthday-inputs {
+      width: 100%;
+      padding-left: 10px;
+    }
+    .onboarding-birthday-inputs-error-validation {
+      padding-left: 24px;
+      font-size: 14px;
+      color: red;
+      font-weight: 600;
+    }
+  }
+
+  /**
+  * onboarding finally success
+  */
+  .body-onboarding-success {
+    .content-success {
+      padding: @grid*35 @grid*7;
+      ion-icon {
+        display: block;
+        padding: @grid*1;
+        font-size: 75px;
+        color: var(--ion-text-color);
+      }
+
+      .feature-disclaimer {
+        padding-top: 80%;
+        color: rgb(102, 102, 102)
+      }
+    }
+  }
+  /**
+  * home
+  */
+  .body-home {
+    //padding: 16px 30px;
+    .content-home-info-up {
+      padding: 16px 30px;
+      .content-home-title {
+        h1 {
+          font-weight: bold;
+          font-size: 32px;
+          margin-bottom: 5px;
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+          color: rgb(102, 102, 102);
+        }
+      }
+      .content-home-buttons {
+        padding-top: @grid*6;
+        .view-awards {
+          margin-top: @grid*2;
+        }
+      }
+    }
+    .content-home-info-down {
+      padding: 16px 30px;
+      .content-challenges {
+        padding-top: @grid*3;
+        .content-challenges-title {
+          padding-top: @grid*2;
+          padding-bottom: @grid*2;
+          h1 {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 5px;
+          }
+          h3 {
+            font-weight: 600;
+            font-size: 16px;
+            color: rgb(102, 102, 102);
+          }
+        }
+        .button-all-challenges {
+          display: flex;
+          justify-content: center;
+          padding-left: @grid*2;
+          padding-right: @grid*2;
+        }
+        .content-challenges-success {
+          padding-top: @grid*3;
+          padding-bottom: @grid*2;
+          .content-challenges-success-title{
+            padding-top: @grid*2;
+            padding-bottom: @grid*2;
+            h1 {
+              font-weight: bold;
+              font-size: 26px;
+              margin-bottom: 5px;
+            }
+            h3 {
+              font-weight: 600;
+              font-size: 16px;
+              color: rgb(102, 102, 102);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**
+  *  list challenges
+  */
+  .body-all-challenges {
+    padding: 16px 20px;
+    .body-all-challenges-title {
+      h1 {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 14px;
+        color: rgb(102, 102, 102);
+      }
+    }
+  }
+  .body-all-challenges-list {
+    padding-left: @grid*6;
+  }
+
+  //awards
+  &.list-awards {
+    .content {
+      padding: 18px 21px;
+      h1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+      }
+
+      p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        color: var(--ion-text-color-1);
+        margin-top: 8px;
+      }
+    }
+    .box-awards-points {
+      background: #FBFBFB;
+      .content-awards {
+        padding: 0px 21px;
+        .title-text-awards {
+          padding-top: 4px;
+          padding-bottom: 4px;
+          padding-left: 4px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.05em;
+          color: #000000;
+        }
+      }
+    }
+    ion-footer {
+      background: #FBFBFB;
+    }
+  }
+
+  //exchange-award
+  &.exchange-award {
+    .content {
+      padding: 18px 21px;
+
+      h1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+      }
+
+      h2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        margin-top: 24px;
+      }
+
+      p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        color: var(--ion-text-color-1);
+        margin-top: 8px;
+      }
+    }
+  }
+
+  //awards
+  &.ranking {
+    .content {
+      padding: 18px 21px;
+      h1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+      }
+
+      p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        color: var(--ion-text-color-1);
+
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &.scanner {
+    background: transparent;
+
+    ion-header {
+      background: transparent;
+
+      ion-icon {
+        color: white;
+        font-size: 26px;
+        padding-left: @grid*4;
+        padding-top: 48px;
+      }
+    }
+
+    .content {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-icon {
+        width: 100%;
+        margin-top: -35%;
+        height: 140%;
+      }
+      .message {
+        font-size: @grid*5;
+        line-height: 1;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: @tracking;
+        position: absolute;
+        width: 70%;
+        bottom: 30%;
+        text-align: center;
+      }
+      @media @breakpoint-s {
+        .message {
+          font-size: @grid*4;
+          bottom: 26%;
+        }
+      }
+    }
+  }
+
+  //scanner-success
+  .body-scanner-success {
+    .content-scanner-success{
+      padding: @grid*40 @grid*7;
+      .icon-scanner-success {
+        text-align: center;
+        ion-icon {
+          font-size: @grid*30;
+          color: var(--ion-text-color);
+        }
+      }
+      .text-scanner-success {
+        text-align: center;
+        font-size: @grid*5;
+        color: var(--ion-text-color);
+        margin-top: @grid*2;
+        h3 {
+          padding-top: @grid*2;
+          font-weight: 600;
+          font-size: 16px;
+          color: rgb(102, 102, 102);
+        }
+        .pts {
+          display: flex;
+          justify-content: center;
+          padding-top: @grid*2;
+          h1{
+            padding-left: @grid*1;
+          }
+          h2 {
+            font-weight: bold;
+            font-size: 18px;
+            padding-top: @grid*3;
+            padding-left: @grid*1;
+          }
+          ion-icon {
+            font-size: @grid*8;
+          }
+        }
+      }
+    }
+  }
+}
+
+// apply specific style to error modal
+ion-modal.award-detail {
+  --height: 500px !important;
+ 
+
+
+  .message {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  .content {
+    overflow-y: scroll !important;
+    --offset-bottom: unset !important;
+    --overflow: unset !important;
+    height: 360px;
+    p{
+      line-height: 25px;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+ion-modal.challenges-flow-list-challenges {
+  --height: 500px !important;
+}
+
+.modal-icon-score {
+  height: 28px;
+}
+
+.modal-subtitle-score {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  display: flex;
+}
+
+.modal-description-score {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-date-validate-score {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .text-valid {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.modal-subtitle-score-pts {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  color: var(--ion-text-color);
+}
+
+.modal-icon-calendar {
+  vertical-align: middle;
+  padding-right: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+ion-modal.challenge-flow-xyzw-modal-onboarding {
+  --height: 500px;
+}

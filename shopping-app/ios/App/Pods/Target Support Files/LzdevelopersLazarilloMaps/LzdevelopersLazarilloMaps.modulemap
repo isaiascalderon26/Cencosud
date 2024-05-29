@@ -1,0 +1,6 @@
+framework module LzdevelopersLazarilloMaps {
+  umbrella header "LzdevelopersLazarilloMaps-umbrella.h"
+
+  export *
+  module * { export * }
+}

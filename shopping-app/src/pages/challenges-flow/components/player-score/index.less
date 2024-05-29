@@ -1,0 +1,59 @@
+@import "../../../../theme/ui-rules.less";
+
+.player-score-components {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 28px;
+  background-color: var(--ion-button-primary-color);
+  box-shadow: 0 0 20px rgb(0 0 0 / 12%);
+  padding: @grid*6 @grid*4 @grid*6 @grid*4;
+  .title-header {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: -0.05em;
+    color: #909090;
+  }
+  .title-level h1 {
+    padding-top: @grid*1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  .player-score-bar {
+    padding-top: @grid*3;
+    padding-bottom: @grid*2;
+  }
+  .text-next-level {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: -0.05em;
+    color: #333333;
+    padding-top: 8px;
+    img {
+      position:relative;
+      top: 2px;
+      height: 15px;
+      width: 15px;
+    }
+  }
+  .footer-points {
+    padding-top: @grid*2;
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: -0.05em;
+    color: #333333;
+    .flex-item {
+      flex-grow: 1;
+    }
+    .points-end {
+      text-align: right;
+    }
+  }
+}

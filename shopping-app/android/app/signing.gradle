@@ -1,0 +1,24 @@
+android {
+    signingConfigs {
+/*         debug{
+            keyAlias 'android0'
+            keyPassword 'android'
+            storeFile file('./../../certificates/debug.keystore')
+            storePassword 'android'
+        } */
+        release {
+              storeFile file("./../../certificates/release.keystore")
+              storePassword "shopping"
+              keyAlias "shopping0"
+              keyPassword "shopping"
+         }
+    }
+    buildTypes {
+/*         debug{
+            signingConfig
+        } */
+        release{
+            signingConfig
+        }
+    }
+}

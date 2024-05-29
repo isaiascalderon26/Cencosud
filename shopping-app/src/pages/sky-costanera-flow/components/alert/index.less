@@ -1,0 +1,58 @@
+@import "../../../../theme/ui-rules.less";
+
+.alert-component {
+    .alert-body {   
+        width: 100%;
+        background-color: #fff; 
+        padding: 15px; 
+        margin-bottom: 20px; 
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        .alert-content {
+            display: flex;
+            align-items: center;
+        }
+        .alert-text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: -0.05em;
+            padding-left: 10px;
+            .alert-active-text{
+                color: var(--ion-text-secundary-color);
+            }
+            .alert-expired-text{
+                color: var(--ion-color-danger);
+            }
+        }
+        .icon-type-alert-expired ion-icon {
+            font-size: 32px;
+            color: var(--ion-color-danger);
+        }
+        .icon-type-alert-refund ion-icon {
+            font-size: 32px;
+            color: var(--ion-color-danger);
+        }
+        .icon-type-.alert-active ion-icon {
+            font-size: 32px;
+            color: var(--ion-text-secundary-color);
+        }
+    }
+
+    .alert-active, .alert-used{
+        border-color: var(--ion-text-secundary-color);
+        border: 2px solid var(--ion-color-foreground); 
+        background-color: var(--ion-background-color);
+        border-radius: 10px;
+    }
+    .alert-expired, .alert-refund{
+        color: var(--ion-color-danger);
+        border-color: var(--ion-color-danger);
+        border: 2px solid var(--ion-color-danger);
+        background-color: var(--ion-background-color);
+        border-radius: 10px;
+    } 
+}

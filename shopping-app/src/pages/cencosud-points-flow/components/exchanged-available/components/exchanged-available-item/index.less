@@ -1,0 +1,63 @@
+@import '../../../../../../theme/ui-rules.less';
+
+.exchanged-available-item {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: gray;
+    justify-content: space-between;
+    height: 226px;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    .points-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        .points{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 2px 4px;
+            gap: 4px;
+            height: 25px;
+            background: #000000;
+            border-radius: 40px;
+
+            span{
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        .title{
+            /* Bold/L10 - 16px */
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+        .subtitle{
+            margin-top: 5px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    }
+    
+
+}

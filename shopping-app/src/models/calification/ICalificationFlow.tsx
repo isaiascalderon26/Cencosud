@@ -1,0 +1,1 @@
+export type ICalificationFlow = 'AUTOSCAN' | 'AUTOPASS' | 'AUTOPASS-RESOLUTION' | 'SKY-COSTANERA' | 'FOODIE';

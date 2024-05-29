@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "803339148188",
+    "project_id": "shopping-app-d96b7",
+    "storage_bucket": "shopping-app-d96b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803339148188:android:4d6b4e52469a5091d08659",
+        "android_client_info": {
+          "package_name": "cencosud.shopping.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803339148188-snf50d920ju269r41arpo6b6c84s6ulc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cencosud.shopping.app",
+            "certificate_hash": "0fd3f02141c39eea0bd31259369e24f63c9444f0"
+          }
+        },
+        {
+          "client_id": "803339148188-24ja1urghlj5vchuclg7rg8572ghp6h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00qQAKbYp91HDRkFVGAarQTGYS_SrFiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803339148188-24ja1urghlj5vchuclg7rg8572ghp6h6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "803339148188-8vkme1lsl43dofmgml017ujhu6rnaois.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cencosudx.shopping.app",
+                "app_store_id": "1591048778"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803339148188:android:a1665d1bbe38485ed08659",
+        "android_client_info": {
+          "package_name": "cencosudx.shopping.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803339148188-3lo2ten88fi2ku2nm5uleq79fvdbo1kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cencosudx.shopping.app",
+            "certificate_hash": "0fd3f02141c39eea0bd31259369e24f63c9444f0"
+          }
+        },
+        {
+          "client_id": "803339148188-24ja1urghlj5vchuclg7rg8572ghp6h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00qQAKbYp91HDRkFVGAarQTGYS_SrFiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803339148188-24ja1urghlj5vchuclg7rg8572ghp6h6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "803339148188-8vkme1lsl43dofmgml017ujhu6rnaois.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cencosudx.shopping.app",
+                "app_store_id": "1591048778"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

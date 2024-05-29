@@ -1,0 +1,32 @@
+@import "../../../../theme/ui-rules.less";
+
+.component-alert-coupon {
+    margin-top: @grid*4;
+    margin-left: @grid*4px;
+    margin-right: @grid*4px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: @grid*3px @grid*3px @grid*3px @grid*3px; 
+    .text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.05em;
+        color: #000000;
+    }
+}
+
+&.hidden {
+    display: none;
+}
+&.success {
+    background: #D2F7DB;
+}
+&.error {
+    background: #F7D2D2;
+}

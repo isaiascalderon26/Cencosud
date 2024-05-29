@@ -1,0 +1,95 @@
+@import "../../theme/ui-rules.less";
+
+ion-modal.discount-modal {
+	--background: var(--ion-card-background-color);
+  	--height: 80%;
+  	--width: 100%;
+  	align-items: flex-end;
+  
+	div[role="dialog"] {
+		border-radius: 30px;
+		--background: var(--ion-card-background-color);
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		div.ion-page {
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			background: var(--ion-card-background-color);
+		}
+	}
+
+	ion-header {
+		.header {
+			display: flex;
+			justify-content: flex-end;
+			padding: 22px 22px 15px;
+			.close-button {
+				display: inline-block;
+				padding: 5px 0px 5px 30px;
+				ion-icon {
+					color: var(--ion-text-color);
+					font-size: 24px;
+					float:right;
+				}
+			}
+		}
+	}
+
+  	ion-content {
+		--background: var(--ion-card-background-color);
+		letter-spacing: -0.05em;
+		--offset-bottom: auto!important;
+    	--overflow: hidden;
+
+    	.content {
+      		padding: 0 @grid*6;
+			.body-content-discount {
+				h2.title {
+					font-weight: bold;
+					margin-bottom: @grid*2;
+				}
+				h3.subtitle {
+					font-weight: 600;
+					margin-bottom: @grid*4;
+					color: #666666;
+				}
+			}
+			.screen-coupon {
+				padding-bottom: @grid*4;
+			}
+			.text-avalaible {
+				padding-bottom: @grid*3;
+				h1 {
+					font-style: normal;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 20px;
+					letter-spacing: -0.05em;
+					color: #000000;
+				}
+			}
+			.display-coupon {
+				padding-bottom: @grid*2;
+				height: 300px;
+				overflow-x: scroll;
+				&::-webkit-scrollbar {
+					display: none;
+					width: 0px;
+					background: transparent;
+				}  
+			}
+    	}
+  	}
+}
+
+/**
+* override modal scanner style
+*/ 
+.scanner-error-modal {
+    ion-button {
+        --background: var(--ion-text-color);
+        --backgroudd-activated: var(--ion-text-color);
+        color: var(--ion-background-color) !important;
+    }
+}

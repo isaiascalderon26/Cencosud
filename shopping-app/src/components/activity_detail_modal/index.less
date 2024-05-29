@@ -1,0 +1,148 @@
+@import "../../theme/ui-rules.less";
+
+ion-modal.activity-detail-modal {
+  --height: 100%;
+  --width: 100%;
+  div[role="dialog"] {
+    --background: var(--ion-button-primary-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    div.ion-page {
+      --background: var(--ion-button-primary-color);
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+  }
+
+  &.initial-state {
+    ion-content {
+      --background: transparent;
+      >div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+
+        ion-spinner {
+          height: @grid*12;
+          width: @grid*12;
+        }
+        div {
+          padding-top: @grid*4;
+        }
+      }
+    }
+  }
+
+  &.page-loaded {
+    ion-content {
+      >div {
+        height: 100%;
+        overflow-y: scroll;
+        >div {
+          padding: 0 16px;
+          width: 100%;
+          /* ICON CLOSE BUTTON */
+          &:nth-child(1) {
+            text-align: right;
+            padding: @grid*2 @grid*6 0;
+            ion-icon {
+              padding: @grid*0.5;
+              font-size: @grid*7;
+            }
+            @media @breakpoint-s {
+              ion-icon {
+                font-size: @grid*6;
+              }
+            }
+          }
+          /* TITTLE */
+          &:nth-child(2) {
+            padding: 0 @grid*8;
+            margin-bottom: @grid*10;
+            h1 {
+              font-weight: bold;
+              font-size: @grid*8;
+              width: 96%;
+            }
+          }
+          @media @breakpoint-s {
+            &:nth-child(2) {
+              margin-bottom: @grid*6;
+              h1 {
+                font-size: @grid*6;
+                width: 100%;
+              }
+            }
+          }
+          /* EXPIRE DATE */
+          &:nth-child(3) {
+            padding: 0 32px;
+            //margin-bottom: 24px;
+            >div {
+              display: flex;
+              align-items: center;
+              border-radius: 40px;
+              padding: 8px 16px;
+              background-color: rgba(0, 0, 0, 0.1);
+              ion-icon{
+                font-size: 20px;
+              }
+              p{
+                margin-left: 8px;
+                font-weight: bold;
+                font-size: 14px;
+              }
+            }
+          
+          }
+          /* VIDEO */
+          &:nth-child(4) {
+            padding: 0 @grid*6;
+            margin-bottom: @grid*4;
+            iframe {
+              border: none;
+              border-radius: @grid*2;
+            }
+          }
+          /* IMAGE */
+          &:nth-child(5) {
+            padding: 0 @grid*6;
+            img {
+              border-radius: @grid*4;
+              display: block;
+            }
+          }
+          /* DESCRIPTION */
+          &:nth-child(6) {
+            padding: @grid*4 @grid*8 0;
+            p {
+              font-weight: 600;
+              font-size: @grid*4;
+              line-height: @grid*6;
+              opacity: .8;
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+      .acquia-info {
+        padding: 0 @grid*6;
+        margin-bottom: @grid*20;
+        img {
+          border-radius: @grid*4;
+        }
+      }
+    }
+  }
+}
+@media @breakpoint-m {
+  .activity-detail-modal {
+    .ion-page {
+      padding-top: @grid*10;
+    }
+  }
+}

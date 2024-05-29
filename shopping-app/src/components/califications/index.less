@@ -1,0 +1,134 @@
+@import "../../theme/ui-rules.less";
+
+ion-modal.calification-idqxrsbhal {
+
+  @modal-height: 558px;
+
+  --height: @modal-height;
+  --background: var(--ion-color-primary);
+  align-items: flex-end;
+
+  div[role="dialog"] {
+    border-radius: 30px;
+    --background: var(--ion-card-background-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  
+    div.ion-page {
+      background-color: var(--ion-card-background-color);
+    }
+
+  }
+
+  .close-icon {
+    position: absolute;
+    top: @grid*4;
+    right: @grid*4;
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: @grid*8;
+    width: @grid*8;
+    padding: 4px;
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+    --ionicon-stroke-width: 32px;
+  }
+  
+  .text-align-center {
+    text-align: center;
+  }
+
+  .slide-body {
+    padding: 28px 24px;
+    height: @modal-height;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    
+    .header {
+      ion-img {
+        height: 182px;
+      }
+
+      .inner-header-wrapper {
+        height: 182px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+    }
+
+    .title {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: -0.05em;
+      margin: 16px 0;
+    }
+    
+    .center-region {
+      flex: 1;
+    }
+    
+    .flex-space-between {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .comment {
+      background-color: #F8F8F8;;
+      padding: 10px @grid*4;
+      height: 100px;
+      border: 1px solid #D5DFE4;
+      border-radius: @grid*2;
+
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.05em;
+      resize: none;
+      width: 100%;
+      margin-top: 18px;
+    }
+    
+    .text-secondary {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .text-cencosud {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: -0.05em;
+    }
+
+    .secondary-btn {
+      &.white {
+        color: #999999;
+        --border-color: #D8D8D8;
+        --border-width: 2px;
+        --border-style: solid;
+      }
+    }
+  }
+}

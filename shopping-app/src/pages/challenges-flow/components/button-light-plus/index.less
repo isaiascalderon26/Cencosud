@@ -1,0 +1,35 @@
+@import "../../../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.component-button-light-plus {
+    border-radius: 58px;
+    height: 45px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    border: 1px solid @grey;
+    background-color: var(--ion-card-background);
+    width: 70%;
+    justify-content: center;
+    .component-button-light-plus-icon {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ion-icon {
+            font-size: 16px;
+        }
+    }
+    .component-button-light-plus-text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+    }
+  }

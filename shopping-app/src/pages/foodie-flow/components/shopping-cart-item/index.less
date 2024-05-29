@@ -1,0 +1,128 @@
+.mbzmskajgx {
+  width: 100%;
+  .content {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    background-color: var(--ion-background-color);
+
+    .item-image {
+      position: relative;
+
+      .unavailable-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .unavailable-badge {
+        position: absolute;
+        width: 68px;
+        height: 28px;
+        background: #F35353;
+        border-radius: 8px;
+        width: 68px;
+        height: 28px;
+        z-index: 1;
+  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+  
+        .value {
+          width: 64px;
+          height: 20px;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 150%;
+          /* or 15px */
+  
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.05em;
+          color: #FFFFFF;
+        }
+      }
+
+      .opaque {
+        width: 100%;
+        height: max-content;
+        opacity: 0.4;
+      }
+    }
+
+      .edit-icon {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+
+        .edit-img {
+          width: 24px;
+          height: 24px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          border: 1px solid #FFFFFF;
+          background-color: #FFFFFF;
+        }
+      }
+
+      ion-img::part(image) {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+        border-radius: 16px;
+      }
+    }
+
+    .item-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+
+
+      .name {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.05em;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+      }
+
+      .description {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: -0.05em;
+        color: rgba(0, 0, 0, 0.6);
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+
+      .item-info-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 6px;
+      }
+    }
+  }
+
+
+}

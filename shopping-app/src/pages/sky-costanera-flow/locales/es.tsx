@@ -1,0 +1,15 @@
+export default {
+    TICKET_DETAIL_TITLE: 'Detalle de los tickets',
+    VISITORS_TITLE: 'Visitantes',
+    DATE_TITLE: 'Fecha',
+    HOUR_TITLE: 'Hora',
+    PAYMENT_TITLE: 'Monto a pagar',
+    SELECTED_PAYMENT_TITLE: 'Selecciona un medio de pago',
+    ADD_CARD_TEXT: 'Agregar tarjeta',
+    CARD_IN_PROGRESS_TEXT: 'Conectando con...',
+    REGISTER_CARD_SUCCESS_TEXT: '¡Todo listo!',
+    REGISTER_CARD_ADD_SUCCESS_TEXT: 'Tarjeta agregada.',
+    RUT_TITLE: 'Primero, ingresa tu RUT',
+    RUT_SUBTITLE: 'Usamos esta info para comunicarnos contigo.',
+    RUT_HELP_MESSAGE: 'Debes ingresar un RUT válido. (12345678-9)',
+};

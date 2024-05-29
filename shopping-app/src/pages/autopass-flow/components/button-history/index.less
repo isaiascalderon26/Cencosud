@@ -1,0 +1,94 @@
+@import "../../../../theme/ui-rules.less";
+
+@grey-light: hsl(200, 10%, 92%);
+@grey: hsl(200, 10%, 85%);
+@bg: rgba(0, 0, 0, 0.25);
+@divider: @grey-light;
+@cutout-size: 2rem;
+
+.component-button-history {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  border-radius: 58px;
+  padding: 10px 24px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  align-items: center;
+  grid-template-columns: 20px 1fr  20px;
+  gap: 4px;
+  
+  .component-button-history-date-time {
+    display: flex;
+    align-items: center;
+      .component-button-history-day {
+        font-size: @grid*6;
+        margin-right: @grid;
+      }
+
+      @media @breakpoint-s {
+        .component-button-history-day {
+          font-size: @grid*5.5;
+        }
+      }
+
+      .component-button-history-detail-month-year {
+        font-size: @grid*3;
+        span {
+          text-transform: lowercase;
+          display: block;
+        }
+      }
+
+      @media @breakpoint-s {
+        .component-button-history-detail-month-year {
+          font-size: @grid*2.5;
+        }
+      }
+    }
+    &.component-button-history-record {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--ion-card-background-color);
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 58px;
+      .status {
+        text-align: right;
+        max-width: @grid*22.5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 2px 0;
+        &.parked {
+          color: var(--ion-text-color);
+        }
+        &.paid {
+          color: #20BB2F;
+        }
+        &.pending {
+          color: #FF3B30;
+        }
+      }
+      .component-button-history-check-ticket {
+        display: flex;
+        align-items: center;
+        ion-icon {
+          padding-left: 9px;
+          font-size: 16px;
+        }
+      }
+      @media @breakpoint-s {
+        .status {
+          max-width: @grid*18;
+        }
+      }
+    }
+  }
+  @media @breakpoint-m {
+    .component-button-history-record {
+      padding: 14px 24px;
+    }
+  }

@@ -1,0 +1,39 @@
+@import '../../../../../../theme/ui-rules.less';
+
+.tab-xcv-hrcmrnmwkl {
+
+    display: inline-block;
+    border: 2px solid #EEEEEE;
+    border-radius: 32px;
+    padding: 10px 16px;
+    margin-right: 8px;
+    min-height: 40px;
+
+    .tab-content {
+        display: flex;
+        align-items: center;
+
+    }
+
+    ion-icon {
+        margin-left: 8px;
+        border-radius: 50%;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    &.selected {
+        background: linear-gradient(var(--ion-button-primary-color),var(--ion-button-primary-color)) padding-box,
+        linear-gradient(to right top, #FF55AA, #B850C9, #6572D6, #4EAEB8) border-box;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        
+        .icon {
+            display: block;
+
+        }
+    }
+
+}

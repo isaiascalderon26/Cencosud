@@ -1,0 +1,239 @@
+@import "../../theme/ui-rules.less";
+
+.schedules-flow {
+    /**
+    * scheduling
+    */
+    &.scheduling {
+        ion-icon {
+            color: white !important;
+        }
+        .scheduling-image-title {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            height: 169px;
+            background-size: cover !important;
+        }
+        .content-scheduling {
+            padding: 120px 30px;
+            .title {
+                h1 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 100%;
+                    letter-spacing: -0.05em;
+                    color: #000000;
+                }
+            }
+            .subtitle {
+                padding-top: @grid*2;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: -0.05em;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            .input-star {
+                padding-top: @grid*8;
+                padding-bottom: @grid*8;
+            }
+            .text-body {
+                padding-top: @grid*4;
+                .config-scheduling {
+                    .space {
+                        padding-top: @grid*6;
+                    }
+                    .schedules-form-error {
+                        color:red;
+                        padding-left: @grid*4;
+                        font-size: 15px;
+                    }
+                }
+            }
+            
+        }
+    }
+    /**
+    * hours 
+    */
+    &.hours {
+        .content-hours-text {
+            padding: 0 @grid*6 @grid*4 @grid*6;
+            .title {
+                h1 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 100%;
+                    letter-spacing: -0.05em;
+                    color: #000000;
+                }
+            }
+            .subtitle {
+                padding-top: @grid*2;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: -0.05em;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        .separation-line {
+            width: 100%;
+            height: 1px;
+            background: #E1E1E1;
+        }
+        .content-hours {
+            padding: @grid*6 @grid*6 @grid*4 @grid*6;
+            .hours-box {
+                display: grid;
+                row-gap: @grid*4;
+            }
+        }
+        .footer-hours {
+            padding-top: @grid*6;
+        }
+    }
+    /**
+    * schedules success
+    */
+    &.scheduling-success {
+        .body-schedule-success {
+            padding: @grid*4 @grid*4 @grid*4 @grid*8;
+            .schedule-header {
+                padding-top: 50%;
+                .icon-check-ok {
+                    width: 100px;
+                    height: 100px;
+                }
+                .title {
+                    padding-top: @grid*6;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    letter-spacing: -0.05em;
+                }
+                .subtitle {
+                    padding-top: @grid*4;
+                    font-weight: 600;
+                    font-size: 16px;
+                    letter-spacing: -0.05em;
+                    color: #909090;
+                    p{
+                        line-height: 125%;
+                    }
+                }
+            }
+        }
+        .footer {
+            padding-bottom: @grid*15;
+            padding-left: @grid*8;
+            padding-right: @grid*8;
+            .button-go-to-events {
+                .white {
+                    color: #999999;
+                    --border-color: #D8D8D8;
+                    --border-width: 2px;
+                    --border-style: solid;
+                    --background: #FFFFFF;
+                }
+            }
+        }
+    }
+    
+}
+
+ion-modal.schedule-calendar-modal-oPwQaZ2 {
+    .content {
+        overflow-y: scroll;
+        height: 380px;
+        &::-webkit-scrollbar {
+                display: none;
+                width: 0px;
+                background: transparent;
+        }
+        h1{
+            padding-left: @grid*4;
+        }
+        .schedule-modal-body {
+            .list-box {
+                margin-top: @grid*6;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                padding-left: @grid*4;
+            }
+            .schedule-modal-body-subtitle {
+                h4 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 14px;
+                    letter-spacing: -0.05em;
+                    color: rgba(0, 0, 0, 0.6);
+                    padding-left: @grid*4;
+                }
+            }
+        }
+    }
+}
+
+ion-modal.error-account-save-plkght {
+    .content {
+        padding-top: @grid*4;
+        .body-text {
+            padding-top: @grid*4;
+            .subtitle {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: -0.05em;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            .buttons-footer {
+                padding-top: @grid*8;
+            }
+        }
+    }
+}
+
+ion-picker.select-modal-opigf009 {
+    .picker-toolbar{
+       height: 80px;
+    }
+    .picker-toolbar-button button {
+        margin-top: @grid*3;
+        margin-left: @grid*3;
+        background-color: #000000;
+        color: #FFFFFF;
+        border-radius: 30px;
+    }
+    .ion-activatable {
+        margin-top: @grid*3 !important;
+        margin-left: @grid*3 !important;
+        background-color: #000000 !important;
+        color: #FFFFFF !important;
+        border-radius: 30px;
+    }
+}
+
+ion-modal.resheduling{
+    .body-text{
+        .description{
+            padding-bottom: @grid*1;
+        }
+    }
+}

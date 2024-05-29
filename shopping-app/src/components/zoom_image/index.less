@@ -1,0 +1,73 @@
+ion-modal.zoom-image-modal {
+    --height: 73%;
+    --width: 90%;
+    align-items: center;
+    backdrop-filter: blur(40px);
+    ion-backdrop {
+      backdrop-filter: blur(3px);
+    }
+    div[role="dialog"] {
+      --background: transparent;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-radius: 16px;
+  
+      div.ion-page {
+        --background: transparent;
+        background-color: transparent;
+        border-radius: 16px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        justify-content: center;
+
+        .container{
+            display: flex;
+            position: relative;
+            height: 300px;
+
+            &.medium {
+              width: 95%;
+              align-self: center;
+            }
+    
+            .close-button {
+                z-index: 10;
+                position: absolute;
+                right: 0;
+                padding: 20px 16px;
+                font-size: 26px;
+                top: 0;
+                ion-icon {
+                  background-color: var(--ion-background-color);
+                  border-radius: 13px;
+                }
+                &.outside {
+                  padding: 0px;
+                  top: -14px;
+                  right: -9px;
+                }
+              }
+              ion-content {
+                position: absolute;
+                --background: transparent;
+                z-index: 2;
+                img {
+                  border-radius: 16px;
+                }
+              }
+        }
+      }
+    }
+    
+    
+  }
+  
+  
+  
+  /* IPHONE 6 AND ABOVE IN TERMS OF SIZE */
+  @media (max-height: 750px) {
+    ion-modal.zoom-image-modal {
+      --height: 90%;
+    }
+  }

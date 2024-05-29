@@ -1,0 +1,97 @@
+@import "../../../../theme/ui-rules.less";
+
+.card-item {
+  padding: 16px;
+  min-height: 96px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &.selected {
+    border: 4px solid;
+  }
+
+  &.visa {
+    background: linear-gradient(85.55deg, #0039A7 2.85%, #2163E3 47.37%, #89B0FF 100.79%);
+
+    .dots {
+      color: white;
+    }
+
+    .number {
+      color: white;
+    }
+  }
+
+  &.mastercard {
+    background: linear-gradient(85.55deg, #9D9D9D 2.85%, #C4C4C4 47.37%, #E6E4E4 100.79%);
+  }
+
+  &.other {
+    background: linear-gradient(269.87deg, #00AAE4 0.12%, #8255BE 99.9%);
+
+    .card-logo {
+      width: 30px;
+    }
+
+    .dots {
+      color: white;
+    }
+
+    .number {
+      color: white;
+    }
+  }
+
+  .card-logo {
+    position: absolute;
+    width: 53px;
+    height: 32.39px;
+  }
+
+  .bottom-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    bottom: -5px;
+
+    .card-number-container {
+      display: flex;
+      align-items: center;
+
+      .dots {
+        margin-left: 4px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+      }
+
+      .number {
+        margin-left: 3px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+      }
+    }
+
+    .remove-card-container {
+      position: relative;
+      bottom: -5px;
+
+      .remove-card-button {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

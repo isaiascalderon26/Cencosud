@@ -1,0 +1,96 @@
+@import "../../theme/ui-rules.less";
+
+.coupons-flow {
+    /**
+    * home
+    */
+    .body-home {
+        .body-home-content {
+            .home-header {
+                padding: @grid*4 @grid*2 @grid*4 @grid*6;
+                h2.title {
+                    font-weight: bold;
+                    margin-bottom: @grid*2;
+                }
+                h3.subtitle {
+                    font-weight: 600;
+                    margin-bottom: @grid*4;
+                    color: #666666;
+                }
+            }
+            .body-home-screen-coupon {
+                padding: @grid*3 @grid*5 @grid*2 @grid*5;
+                padding-right: @grid*4;
+                margin-bottom: @grid*4;
+            }
+            .footer-info-text {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 12px;
+                text-align: center;
+                letter-spacing: -0.05em;
+                color: #000000;
+                opacity: 0.5;
+                margin-bottom: @grid*2;
+            }
+            .display-coupon {
+                padding: @grid*3 @grid*4 @grid*2 @grid*4;
+            }
+        }
+    }
+    /**
+    * Scanner
+    */
+    &.scanner {
+        background: transparent;
+        ion-header {
+            background: transparent;
+            ion-icon {
+                color: white;
+                font-size: 26px;
+                padding-left: @grid*4;
+                padding-top: @grid*6;
+            }
+        }
+        .content {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ion-icon {
+                width: 100%;
+                margin-top: -35%;
+                height: 140%;
+            }
+            .message {
+                font-size: @grid*5;
+                line-height: 1;
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: @tracking;
+                position: absolute;
+                width: 70%;
+                bottom: 30%;
+                text-align: center;
+            }
+            @media @breakpoint-s {
+                .message {
+                    font-size: @grid*4;
+                    bottom: 26%;
+                }
+            }
+        }
+    }
+}
+/**
+* override modal scanner style
+*/ 
+.scanner-error-modal {
+    ion-button {
+        --background: var(--ion-text-color);
+        --backgroudd-activated: var(--ion-text-color);
+        color: var(--ion-background-color) !important;
+    }
+}

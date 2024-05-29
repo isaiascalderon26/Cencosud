@@ -1,0 +1,72 @@
+.component-list-item-lkjmf {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 26px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    .avatar {
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+    } 
+    .body-text {
+        width: 150px;
+        .title {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: -0.05em;
+            color: #000000;
+        }
+        .subtitle {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: -0.05em;
+            color: #909090;
+        }
+        .tag {
+            padding: 4px 8px;
+            width: fit-content;
+            height: 24px;
+            background: #F5F5F5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            .tag-text{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 120%;
+                letter-spacing: -0.05em;
+                color: #191919;
+                &.complete{
+                    color: #2C682E;
+                }
+            }
+            &.complete{
+                    background: #EBFAF0;
+                }
+                .icon-check{
+                    ion-icon{
+                        width: 20px;
+                        color: #2C682E;
+                    }
+                }
+            }
+    }
+    .icon-next{
+        display: flex;
+        align-items: center;
+        ion-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

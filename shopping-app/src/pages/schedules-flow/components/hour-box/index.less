@@ -1,0 +1,60 @@
+@import "../../../../theme/ui-rules.less";
+
+.component-hour-box-Ytrjk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: @grid*7 @grid*7 @grid*7 @grid*7;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    position: relative;
+    .button {
+        .button-content {
+            display: flex;
+            gap: @grid*4;
+            .title {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: -0.05em;
+                color: #000000;
+            }
+            div{
+                padding-top: 2px;
+                .subtitle {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: -0.05em;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    &.selected {
+        background: linear-gradient(var(--ion-button-primary-color), var(--ion-button-primary-color)) padding-box, linear-gradient(to right top, #FF55AA, #B850C9, #6572D6, #4EAEB8) border-box;
+        border: 3px solid transparent;
+        border-radius: 24px;
+        display: inline-block;
+        ion-icon {
+            font-size: @grid*7;
+            position: absolute;
+            color: var(--ion-button-primary-color);
+            top: -10%;
+            right: -3%;
+            border-radius: @grid*4;
+        }
+    }
+
+    &.inactive {
+        opacity: 0.5;
+    }
+
+    
+}

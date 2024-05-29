@@ -1,0 +1,43 @@
+@import "../../theme/ui-rules.less";
+
+.action-sheet {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.3);
+  height: 100%;
+  position: absolute;
+  transition: bottom 300ms ease-in-out, opacity 300ms cubic-bezier(0.74, -0.01, 0.29, 1);
+  z-index: 99999;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+
+  &.is-visible {
+    opacity: 1;
+  }
+
+  .action-sheet-wrapper {
+    border-radius: 30px 30px 0 0;
+    background-color: #fff;
+    padding: 0 32px 32px;
+    transition: margin-bottom 300ms ease-in-out;
+
+    .action-sheet-header {
+      height: 70px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .close-button {
+        display: inline-block;
+        padding: 5px 0px 5px 30px;
+        background: #fff;
+        ion-icon {
+          color: var(--ion-text-color);
+          font-size: 24px;
+          float: right;
+        }
+      }
+    }
+  }
+}

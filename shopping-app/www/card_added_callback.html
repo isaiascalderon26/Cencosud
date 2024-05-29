@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <title></title>
+  <style media="screen">
+    .scroll-image-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    .arrow-image-content {
+      padding-top: 15%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    div>.scroll-image {
+      width: 70%;
+    }
+
+    center {
+      font-family: sans-serif;
+      font-size: 1.15em;
+      padding: 15%;
+      text-align: center;
+    }
+
+    center>span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <br />
+  <br />
+  <div class="arrow-image-content">
+    <img class="arrow" src="#" />
+  </div>
+  <div class="scroll-image-content">
+    <img class="scroll-image" src="#" />
+  </div>
+  <center>
+    Haz scroll y presiona <span>abrir</span> para continuar.
+  </center>
+  <script type="text/javascript">
+    var qs = window.location.href;
+    var parent = window.opener || window.top;
+    var target = this;
+    var parseFragment = function (uri) {
+      var params = uri.substring(uri.indexOf("#response_code") + 1).split("&");
+      var j = {
+        origin: window.location.origin,
+        params
+      };
+
+      for (var idx in params) {
+        var fullParam = params[idx];
+        var name = fullParam.split("=")[0];
+        var value = fullParam.substring(fullParam.indexOf("=") + 1);
+      }
+      return j;
+    };
+
+    parent.postMessage(parseFragment(qs), "*");
+
+    var preventDefault = false;
+    window.addEventListener("message", function (e) {
+      switch (e.data.type) {
+        case "command":
+          switch (e.data.value) {
+            case "close":
+              preventDefault = true;
+              target.close(); // now!
+              break;
+            case "void":
+              preventDefault = true;
+              break;
+          }
+          break;
+      }
+    });
+
+    setTimeout(function () {
+      if (!preventDefault) {
+        target.close();
+      }
+    }, 80);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.lazarillo-map-sheet-modal {
+  .modal-wrapper {
+    align-self: flex-end;
+    visibility: visible;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .ion-page {
+      padding: 0 24px 0 24px;
+    }
+  }
+}
+
+.show-backdrop{
+  ion-backdrop{
+    visibility: visible;
+    opacity: .5;
+  }
+}
+
+.bg-blur {
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.realtime-routing {
+  visibility: visible;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .routing-controls {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 24px 24px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 20px;
+
+    > ion-icon {
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    > ion-button {
+      color: white;
+    }
+  }
+}
+
+.lazarillo-map-instructions {
+  .modal-wrapper {
+    ion-header {
+      [i18n-label] {
+        color: black;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 125%;
+
+        ~ [i18n-label] {
+          color: #6a6a6a;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

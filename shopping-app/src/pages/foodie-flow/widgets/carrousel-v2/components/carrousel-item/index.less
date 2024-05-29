@@ -1,0 +1,99 @@
+
+// Estilos para el IonSlide
+.foodie-items-asslljka {
+  .swiper-wrapper {
+    display: flex;
+    gap: 10px;
+    height: 230px;
+  }
+}
+
+.slide-container {
+    width: 158px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px 0px #0000001A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    gap: 10px;
+
+    .image-container {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+  
+      .discount-badge {
+        position: absolute;
+        margin: 5px;
+        top: 0;
+        left: 0;
+        background-color: #FF6500;
+        color: white;
+        padding: 4px 8px;
+        border-top-left-radius: 15px; /* Redondear esquina superior izquierda */
+        border-bottom-left-radius: 15px; /* Redondear esquina inferior izquierda */
+        border-top-right-radius: 15px; /* Redondear esquina superior derecha */
+        border-bottom-right-radius: 15px; /* Redondear esquina inferior derecha */
+        font-size: 12px;
+      }
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .info-container {
+      width: 100%;
+
+      .text-container {
+        text-align: left;
+  
+        .item-text-title {
+          width: 104px;
+          color: #19191B;
+          font-weight: 600;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+  
+        .item-text-description {
+          color: #696969;
+          font-weight: 300;
+          font-size: 12px;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+          text-overflow: ellipsis;
+        }
+  
+        .price-container {
+          display: flex;
+          gap: 3px;
+
+          .old-price {
+            color: #696969;
+            font-weight: 300;
+            font-size: 12px;
+            text-decoration: line-through;
+          }
+
+          .discount-price {
+            color: #19191B;
+            font-weight: 600;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  

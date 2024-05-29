@@ -1,0 +1,35 @@
+@import "../../../../theme/ui-rules.less";
+
+.button-style-1{
+  .button {
+    width: 100%;
+    border-radius: @grid*4;
+    margin-top: @grid*7;
+    background-color: var(--ion-button-primary-color);
+    box-shadow: 0 0 @grid*5 rgba(0,0,0,0.12);
+    display: flex;
+    padding: @grid*2;
+    align-items: center;
+    .icon {
+        margin-left: @grid*2;
+        img {
+          margin-top: 0 !important;
+          width: @grid*11 !important;
+        }
+    }
+    .text {
+        margin-left: @grid*4;
+        font-size: @grid*4;
+        font-weight: @bold;
+        letter-spacing: @tracking;
+        text-align: left;
+        color: var(--ion-text-color);
+      }
+      @media @breakpoint-s {
+        .text{
+          margin-left: @grid*5;
+          font-size: @grid*3.5;
+        }
+      }
+}
+}
