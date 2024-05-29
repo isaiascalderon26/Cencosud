@@ -1,6 +1,0 @@
-framework module RobingenzCapacitorScreenOrientation {
-  umbrella header "RobingenzCapacitorScreenOrientation-umbrella.h"
-
-  export *
-  module * { export * }
-}
